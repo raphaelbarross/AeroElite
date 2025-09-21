@@ -7,10 +7,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(255, 255, 255);
-  text-align: start;
+  color: white  
 }
-
 .inicio video {
   position: absolute;
   top: 0;
@@ -21,17 +19,12 @@
   filter: brightness(0.5);
   z-index: -100;
 }
-
-
-
 nav a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
- 
 }
-
 .logo {
   width: 250px;
   filter: brightness(0) invert(1);
