@@ -22,16 +22,7 @@
   z-index: -100;
 }
 
-borda {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 200;
-}
+
 
 nav a {
   color: rgb(255, 255, 255);
@@ -41,40 +32,21 @@ nav a {
 }
 
 .logo {
- 
-  width: 200px;
-  height: auto;
-  margin-top: 1000px;
+  width: 250px;
   filter: brightness(0) invert(1);
-  cursor: pointer;
   margin-left: -450px;
-  margin-top: -30px;
+  margin-bottom: 100px;
 }
-
-h1 {
+h1{
   font-size: 4em;
   margin-bottom: 100px;
   text-align: center;
   font-family: 'Arial', sans-serif;
 }
-.hero p {
-  font-size: 1.5em;
-  margin-bottom: 50px;
-  text-align: center;
-  font-family: 'Arial', sans-serif;
+
   
-}
-.hero a {
-  display: inline-block;
-  padding: 10px 30px;
-  background-color: #0f0e0e;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.2em;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  transition: color 0.3s ease;
-  }
+
+
 .sobre-nos-secao {
   display: flex;
   justify-content: space-between;
