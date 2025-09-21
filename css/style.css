@@ -29,6 +29,7 @@ nav a {
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
+ 
 }
 
 .logo {
@@ -47,40 +48,13 @@ h1{
   
 
 
-.sobre-nos-secao {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-color: #121212; 
-  color: #fff;
-  padding: 100px 50px;
-  gap: 40px;
-  border: 2px solid #ffffff;  
-  border-radius: 10px;      
-  margin: 50px auto;
-  max-width: 1200px;
-}
 
-.lado-esquerdo h1 {
-  font-size: 2.8em;
-  margin-bottom: 20px;
-  font-style: italic;
+
+
+
   
-}
 
-.botao-sobre-nos {
-  display: inline-block;
-  padding: 12px 25px;
-  background-color: #e2e0e0;
-  color: #000000;
-  text-decoration: none;
-  font-size: 1.2em;
-  border-radius: 5px;
-  transition: all 0.3s;
-}
-.lado-direito p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  color: #ffffff;
-}
+
+
+
  
