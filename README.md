@@ -7,7 +7,7 @@ O objetivo é criar um site utilizando **HTML, CSS, PHP e banco de dados**, apli
 - HTML5  
 - CSS3  
 - PHP  
-- MySQL  
+- JAVASCRIPT  
 
 
 ## Equipe
