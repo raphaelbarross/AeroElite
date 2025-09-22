@@ -22,20 +22,18 @@ filter: brightness(0.5);
 z-index: -100;
 }
 
-/* Criado um estilo para o header para centralizar os itens de forma responsiva */
+
 header {
 width: 100%;
-position: fixed; /* Fixa o cabeçalho no topo da tela */
+position: fixed; 
 top: 0;
-padding: 20px 50px; /* Adiciona espaço nas laterais */
-box-sizing: border-box; /* Garante que o padding não mude a largura total */
-}
+padding: 20px 50px; 
+box-sizing: border-box; 
 
-/* O .borda agora usa flexbox para posicionar o logo e a navegação */
 .borda {
 display: flex;
-justify-content: space-between; /* Empurra o logo e a navegação para as pontas */
-align-items: center; /* Alinha os itens no centro verticalmente */
+justify-content: space-between; 
+align-items: center; 
 }
 
 .nav-links {
@@ -46,11 +44,11 @@ align-items: center;
 .nav-links a {
 color: rgb(255, 255, 255);
 text-decoration: none;
-margin-left: 15px; /* Ajustei para ficar mais organizado */ font-weight: bold;
+margin-left: 15px; font-weight: bold;
 }
 
 .logo {
-width: 200px; /* Diminuí um pouco para não ser muito grande */
+width: 200px; 
 filter: brightness(0) invert(1);
 }
 
@@ -62,7 +60,7 @@ h1 {
 font-size: 4em;
 text-align: center;
 font-family: 'Arial', sans-serif;
-margin-bottom: 20px; /* Reduzi para o texto não ficar muito longe */
+margin-bottom: 20px; 
 }
 
 h2 {
