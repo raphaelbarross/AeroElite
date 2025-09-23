@@ -1,7 +1,22 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgb(58, 58, 58); 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white; 
+}
+
 .sobre {
+
     text-align: center;
     align-items: center;
-    background-color: rgb(52, 53, 53);
+    background: linear-gradient(to right, #3f3f3f, #1e232e); 
     color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.historia {
+    background: linear-gradient(to right, #3f3f3f, #222733); 
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
