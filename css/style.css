@@ -55,6 +55,7 @@ header {
     align-items: center;
 }
 .left{
+    width: 200px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -67,7 +68,7 @@ header {
     font-weight: bold;
 }
 .logo {
-    width: 200px; 
+    width: 100px; 
     filter: brightness(0) invert(1);
 }
 .bem-vindo {
