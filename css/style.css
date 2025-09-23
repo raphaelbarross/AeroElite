@@ -54,6 +54,12 @@ header {
     display: flex;
     align-items: center;
 }
+.left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
 .nav-links a {
     color: rgb(247, 247, 247);
     text-decoration: none;
