@@ -25,17 +25,17 @@
     z-index: -100;
 }
 .sobre-nos {
-    color: rgb(247, 247, 247);  
-    text-decoration:;       
-    background-color: ;  
-    padding: 6px;
+    color: rgb(233, 233, 233);  
+    text-decoration: solid;       
+    background-color:;  
+    padding: 5px;
     transition: 0,3s;
     color: rgb(253, 253, 253);
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 .sobre-nos:hover {
-    color: rgb(70, 70, 71);
-    text-decoration: underline;
+    color: rgb(65, 65, 65);
+    text-decoration: double;
 }
 header {
     width: 100%;
@@ -49,6 +49,9 @@ header {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
+}
+.nav-links a:hover {
+    color: rgb(56, 56, 56);
 }
 .nav-links {
     display: flex;
