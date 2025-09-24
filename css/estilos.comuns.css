@@ -1,0 +1,43 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 5px 50px;
+    box-sizing: border-box;
+    background-color: #414040;
+    z-index: 1000;
+}
+.borda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 100px;
+    filter: brightness(0) invert(1);
+}
+.left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; 
+}
+.left h3 {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    margin: 0;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links a {
+    color: rgb(247, 247, 247);
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: rgb(70, 70, 71);
+}
