@@ -1,0 +1,44 @@
+header {
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    padding: 5px 50px; 
+    box-sizing: border-box; 
+    background-color: #414040;
+}
+.borda {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    
+     
+}
+.left{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.logo {
+    width: 100px; 
+    filter: brightness(0) invert(1);
+}
+.nav-links a {
+    color: rgb(247, 247, 247);
+    text-decoration: none;
+    margin-left: 15px; 
+    font-weight: bold;
+    
+}
+
+.inicial{
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.nav-links a:hover {
+    color: rgb(56, 56, 56);
+}
