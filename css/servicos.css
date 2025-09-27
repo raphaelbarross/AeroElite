@@ -1,20 +1,14 @@
-:root {
-    --cor-fundo-principal: #2c2c2c; /* Fundo mais escuro */
-    --cor-gradiente-claro: #1c1c1c; /* Gradiente suave */
-    --cor-fundo-card: #212121; /* Fundo do card (distinto do body) */
-    --cor-acento-principal: #007bff; /* Azul premium para destaque/ícones */
-    --cor-texto-claro: #f8f9fa; /* Texto principal (BRANCO) */
-    --cor-texto-suave: #adb5bd; /* Texto secundário/descrições (Cinza claro) */
-    --sombra-card: 0 10px 20px rgba(0, 0, 0, 0.6); /* Sombra intensa para profundidade */
-}
+
 body {
-    
     background: linear-gradient(to right, var(--cor-fundo-principal), #000000);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--cor-texto-claro); 
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+     --cor-fundo-principal: #2c2c2c; 
+    --cor-gradiente-claro: #1c1c1c; 
+    --cor-fundo-card: #212121;
+    --cor-acento-principal: #007bff; 
+    --cor-texto-claro: #f8f9fa; 
+    --cor-texto-suave: #adb5bd;  claro) 
+    --sombra-card: 0 10px 20px rgba(0, 0, 0, 0.6);
 }
 .meu-titulo {
     text-align: center;
@@ -22,7 +16,6 @@ body {
     padding: 100px 20px 70px 20px;
     margin-bottom: 30px;
 }
-
 .meu-titulo h1 {
     font-size: 3.5em;
     font-weight: 800;
@@ -34,7 +27,6 @@ body {
     display: inline-block;
     padding-bottom: 10px;
 }
-
 .meu-titulo h2 {
     font-size: 1.4em;
     font-weight: 300;
@@ -42,9 +34,6 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
-
-
-
 .servicos-principais {
     max-width: 1200px;
     margin: 0 auto 80px auto;
@@ -65,9 +54,6 @@ body {
     margin-bottom: 40px;
     font-weight: 400;
 }
-
-
-
 .servicos-principais {
     
     display: grid;
@@ -80,13 +66,8 @@ body {
 .servicos-principais > h3:nth-of-type(1) {
     grid-column: 1 / -1;
     text-align: center;
-    
     margin-bottom: 10px; 
 }
-
-
-
-
 .servico {
     background: var(--cor-fundo-card); 
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -99,7 +80,7 @@ body {
 }
 .servico h2 {
     font-size: 1.8em;
-    color: var(--cor-acento-secundario); /* Títulos dos serviços em DOURADO */
+    color: var(--cor-acento-secundario);
     margin-top: 0;
     margin-bottom: 5px;
 }
