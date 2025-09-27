@@ -1,0 +1,116 @@
+:root {
+    --cor-fundo-principal: #2c2c2c; /* Fundo mais escuro */
+    --cor-gradiente-claro: #1c1c1c; /* Gradiente suave */
+    --cor-fundo-card: #212121; /* Fundo do card (distinto do body) */
+    --cor-acento-principal: #007bff; /* Azul premium para destaque/ícones */
+    --cor-texto-claro: #f8f9fa; /* Texto principal (BRANCO) */
+    --cor-texto-suave: #adb5bd; /* Texto secundário/descrições (Cinza claro) */
+    --sombra-card: 0 10px 20px rgba(0, 0, 0, 0.6); /* Sombra intensa para profundidade */
+}
+body {
+    
+    background: linear-gradient(to right, var(--cor-fundo-principal), #000000);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--cor-texto-claro); 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.meu-titulo {
+    text-align: center;
+    background: var(--cor-fundo-principal); 
+    padding: 100px 20px 70px 20px;
+    margin-bottom: 30px;
+}
+
+.meu-titulo h1 {
+    font-size: 3.5em;
+    font-weight: 800;
+    color: var(--cor-texto-claro); 
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 3px solid var(--cor-acento-secundario); 
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.meu-titulo h2 {
+    font-size: 1.4em;
+    font-weight: 300;
+    color: var(--cor-texto-suave); 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+.servicos-principais {
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.servicos-principais h2:first-of-type {
+    font-size: 2.5em;
+    color: var(--cor-texto-claro); 
+    margin-bottom: 5px;
+    padding-top: 30px; 
+}
+
+.servicos-principais h3 {
+    font-size: 1.2em;
+    color: var(--cor-texto-suave); 
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+
+
+.servicos-principais {
+    
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+    margin-top: 50px;
+}
+.servicos-principais > h2:nth-of-type(1),
+.servicos-principais > h3:nth-of-type(1) {
+    grid-column: 1 / -1;
+    text-align: center;
+    
+    margin-bottom: 10px; 
+}
+
+
+
+
+.servico {
+    background: var(--cor-fundo-card); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: var(--sombra-card);
+    transition: var(--transicao-suave);
+    color: var(--cor-texto-claro); 
+}
+.servico h2 {
+    font-size: 1.8em;
+    color: var(--cor-acento-secundario); /* Títulos dos serviços em DOURADO */
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+

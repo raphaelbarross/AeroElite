@@ -21,7 +21,7 @@ body {
     background: linear-gradient(to bottom, #242222, #686868);
     padding: 10px;
     padding-bottom: 6%;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 
@@ -31,7 +31,7 @@ body {
 }
 
 .titulo-historia h1 {
-    font-size: 3em;
+    font-size: 2.2em;
     margin-bottom: 0;
 }
 
@@ -52,17 +52,17 @@ body {
 .cabecalho-valores {
     background: linear-gradient(to right, #63646d, #272727);
     text-align: center;
-    padding: 80px;
+    padding: 50px;
     margin: 0;
 }
 
 .cabecalho-valores h1 {
-    font-size: 3.5em;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
 .cabecalho-valores p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom: 2px;
     font-style: italic;
 }
@@ -87,13 +87,13 @@ body {
 }
 
 .bloco p {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .bloco i {
     font-size: 2em;
     color: #fcfcfc;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 
 
@@ -116,7 +116,6 @@ body {
     border-radius: 10px;
 }
 .bloco2 img {
-    bacl
     width: 100%;
     border-radius: 10%; }
     
