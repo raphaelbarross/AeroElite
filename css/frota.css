@@ -6,11 +6,17 @@ body {
         padding: 0;
         }
 header {
-        background-color: #f0f0f0; /* Cor de fundo para o cabeçalho */
-        padding: 10px;
+       
         display: flex;
         justify-content: space-between; /* Distribui os itens nas extremidades */
         align-items: center; /* Alinha verticalmente */
+        width: 100%;
+        position: fixed;
+        top: 0;
+        padding: 5px 50px;
+        box-sizing: border-box;
+        background-color: #414040;
+        z-index: 1000;
         }
 .logo-container {
         display: flex;
@@ -19,28 +25,42 @@ header {
         }
 .logo{
         width: 100px;
+    filter: brightness(0) invert(1);
     }
-.logo-container p {
+.logo-container h1 {
+        font-size: 1.2em;
+        font-style: italic;
         margin-left: 5px; /* Espaço entre o ícone e o texto */
              /* Tamanho do texto */
         font-family: 'Arial', sans-serif;
+        color: rgb(247, 247, 247);
         }
-nav ul {
+nav div {
         list-style: none;
         padding: 0;
         margin: 0;
         display: flex;
+    align-items: center;
         }
-nav ul li {
-        margin-left: 20px;
+nav div a {
+    font-style: italic;
+    color: rgb(247, 247, 247);
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+        }
+nav div a:hover {
+    color: rgb(56, 56, 56);
         }
 main {
-        padding: 20px;
+        padding: 100px;
         text-align: center;
         }
 .pesquisa-container {
         display: flex;
         justify-content: center;
+        margin-top: 30px;
         margin-bottom: 20px;
         }
 .pesquisa-input {
@@ -56,21 +76,23 @@ main {
         cursor: pointer;
         }
 .container-item {
-        display: flex;
         align-items: center;
-        padding: 20px;
+        padding: 30px;
         border: 1px solid #ccc;
         margin-bottom: 10px;
+        justify-content: center;
+        
         }
 .container-item img {
-        width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+        width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
         height: auto;
         margin-right: 20px;
         }
 .icone-container {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin-top: 10px;
+        
         }
 footer {
         background-color: #333;
