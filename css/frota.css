@@ -75,7 +75,6 @@ main {
         padding: 10px;
         width: 300px;
         border: 1px solid #ccc;
-        
         }
 .pesquisa-button {
         padding: 10px 15px;
@@ -96,6 +95,7 @@ main {
         margin-bottom: 10px;
         justify-content: center;
         border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 2%;
         border-style: dotted;
         /* font-size: 1.3em;*/
         }
