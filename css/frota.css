@@ -79,7 +79,7 @@ main {
         }
 .pesquisa-button {
         padding: 10px 15px;
-        background-color: #f8f9fa; /* Cor de fundo do botão */
+        background-color: #f8f9facd; /* Cor de fundo do botão */
         background-color;
         color: white;
         border: none;
@@ -87,7 +87,7 @@ main {
         font-size: 1.3em;
         }
 .pesquisa-button:hover{
-        background-color: #333;
+        background-color: #414040;
 }
 .container-item {
         align-items: center;
