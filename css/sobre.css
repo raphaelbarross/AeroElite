@@ -161,7 +161,7 @@ body {
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 .site-footer {
-    background-color: #0A1931; 
+    background-color: #000d22; 
     padding: 20px 0;
     color: #A8C6E3; 
     font-size: 0.9em;
@@ -177,7 +177,7 @@ body {
 
 .divider {
     height: 1px;
-    background-color: rgba(168, 198, 227, 0.2); 
+    background-color: rgba(15, 0, 0, 0.2); 
     margin: 2px 0;
 }
 
@@ -196,7 +196,7 @@ body {
 
 
 .footer-links a {
-    color: #A8C6E3;
+    color: #e7e7e7;
     text-decoration: none;
     margin-left: 20px;
     transition: color 0.3s;
