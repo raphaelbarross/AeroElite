@@ -1,45 +1,28 @@
-/* ==========================================================
-   PADRÃO DE CORES E VARIÁVEIS (Azul Marinho e Cinza Azulado)
-   ========================================================== */
+
 
 :root {
-    /* Cores */
-    --cor-fundo-principal: #0A1931;       /* Azul Marinho Escuro */
-    --cor-secundaria: #02173d;            /* Azul Escuro Médio (Fundo de Card/Header) */
-    --cor-acento-principal: #A8C6E3;      /* Cinza Azulado Claro (Destaque Principal) */
-    --cor-acento-secundario: #FFFFFF;     /* Branco (Destaque Secundário de Título) */
-    --cor-texto-claro: #FFFFFF;           /* Branco Puro */
-    --cor-texto-suave: #A8C6E3;           /* Cinza Azulado (Texto Secundário) */
     
-    /* Outras Variáveis */
-    --sombra-card: 0 5px 15px rgba(0, 0, 0, 0.4); /* Sombra mais suave */
+    --cor-fundo-principal: #0A1931;      
+    --cor-secundaria: #02173d;            
+    --cor-acento-principal: #A8C6E3;   
+    --cor-acento-secundario: #FFFFFF;  
+    --cor-texto-claro: #FFFFFF;         
+    --cor-texto-suave: #A8C6E3;       
+    
+
+    --sombra-card: 0 5px 15px rgba(0, 0, 0, 0.4); 
     --transicao-suave: all 0.3s ease-in-out;
 }
 
 body {
-    /* Aplicando as variáveis na tag body */
+   
     background: linear-gradient(to right, var(--cor-fundo-principal), #000000);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--cor-texto-claro);
     margin: 0;
     padding: 0;
     
-    /* As definições que estavam soltas no body, agora como variáveis globais (acima em :root) */
-    /*
-    --cor-fundo-principal: #0A1931; 
-    --cor-gradiente-claro: #1c1c1c; 
-    --cor-fundo-card: #212121;
-    --cor-acento-principal: #007bff; 
-    --cor-texto-claro: #f8f9fa; 
-    --cor-texto-suave: #adb5bd; 
-    --sombra-card: 0 10px 20px rgba(0, 0, 0, 0.6);
-    */
-}
-
-/* ==========================================================
-   SEÇÃO TÍTULO (.meu-titulo)
-   ========================================================== */
-.meu-titulo {
+.meu-titulo{
     text-align: center;
 
     background: var(--cor-secundaria); 
@@ -66,9 +49,7 @@ body {
     margin: 0 auto;
 }
 
-/* ==========================================================
-   SEÇÃO SERVIÇOS (.servicos-principais)
-   ========================================================== */
+
 .servicos-principais {
     max-width: 1200px;
     margin: 0 auto 80px auto;
