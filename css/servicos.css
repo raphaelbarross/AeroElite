@@ -1,29 +1,60 @@
+/* ==========================================================
+   PADRÃO DE CORES E VARIÁVEIS (Azul Marinho e Cinza Azulado)
+   ========================================================== */
+
+:root {
+    /* Cores */
+    --cor-fundo-principal: #0A1931;       /* Azul Marinho Escuro */
+    --cor-secundaria: #02173d;            /* Azul Escuro Médio (Fundo de Card/Header) */
+    --cor-acento-principal: #A8C6E3;      /* Cinza Azulado Claro (Destaque Principal) */
+    --cor-acento-secundario: #FFFFFF;     /* Branco (Destaque Secundário de Título) */
+    --cor-texto-claro: #FFFFFF;           /* Branco Puro */
+    --cor-texto-suave: #A8C6E3;           /* Cinza Azulado (Texto Secundário) */
+    
+    /* Outras Variáveis */
+    --sombra-card: 0 5px 15px rgba(0, 0, 0, 0.4); /* Sombra mais suave */
+    --transicao-suave: all 0.3s ease-in-out;
+}
 
 body {
+    /* Aplicando as variáveis na tag body */
     background: linear-gradient(to right, var(--cor-fundo-principal), #000000);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     --cor-fundo-principal: #2c2c2c; 
+    color: var(--cor-texto-claro);
+    margin: 0;
+    padding: 0;
+    
+    /* As definições que estavam soltas no body, agora como variáveis globais (acima em :root) */
+    /*
+    --cor-fundo-principal: #0A1931; 
     --cor-gradiente-claro: #1c1c1c; 
     --cor-fundo-card: #212121;
     --cor-acento-principal: #007bff; 
     --cor-texto-claro: #f8f9fa; 
-    --cor-texto-suave: #adb5bd;  claro) 
+    --cor-texto-suave: #adb5bd; 
     --sombra-card: 0 10px 20px rgba(0, 0, 0, 0.6);
+    */
 }
+
+/* ==========================================================
+   SEÇÃO TÍTULO (.meu-titulo)
+   ========================================================== */
 .meu-titulo {
     text-align: center;
-    background: var(--cor-fundo-principal); 
-    padding: 100px 20px 70px 20px;
+
+    background: var(--cor-secundaria); 
+    padding: 200px 20px 70px 20px;
     margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); / */
 }
 .meu-titulo h1 {
     font-size: 3.5em;
     font-weight: 800;
     color: var(--cor-texto-claro); 
     margin: 0 0 10px 0;
-    text-transform: uppercase;
+   
     letter-spacing: 3px;
-    border-bottom: 3px solid var(--cor-acento-secundario); 
+    border-bottom: 3px solid var(--cor-acento-principal); 
     display: inline-block;
     padding-bottom: 10px;
 }
@@ -34,6 +65,10 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
+
+/* ==========================================================
+   SEÇÃO SERVIÇOS (.servicos-principais)
+   ========================================================== */
 .servicos-principais {
     max-width: 1200px;
     margin: 0 auto 80px auto;
@@ -55,9 +90,8 @@ body {
     font-weight: 400;
 }
 .servicos-principais {
-    
+   
     display: grid;
-    
     grid-template-columns: repeat(2, 1fr); 
     gap: 30px;
     margin-top: 50px;
@@ -68,30 +102,73 @@ body {
     text-align: center;
     margin-bottom: 10px; 
 }
+
+
 .servico {
-    background: var(--cor-fundo-card); 
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 30px;
-    text-align: left;
-    box-shadow: var(--sombra-card);
-    transition: var(--transicao-suave);
-    color: var(--cor-texto-claro); 
+    
+    background: var(--cor-secundaria); 
+    border: 1px solid rgba(168, 198, 227, 0.2); 
+    border-radius: 1  }
+    .divider {
+    height: 1px;
+    background-color: rgba(168, 198, 227, 0.2); 
+    margin: 2px 0;
 }
-.servico h2 {
-    font-size: 1.8em;
-    color: var(--cor-acento-secundario);
-    margin-top: 0;
+
+
+.footer-primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 0;
+}
+
+.footer-copyright {
+    color: #FFFFFF; 
+    font-weight: 500;
+}
+
+
+.footer-links a {
+    color: #A8C6E3;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF; 
+}
+
+
+.footer-certifications {
+    text-align: center;
+    padding: 1px 0 2px 0;
+    line-height: 1.8;
+}
+
+.cert-title {
+    font-weight: bold;
+    color: #FFFFFF; 
     margin-bottom: 5px;
 }
 
+.cert-list {
+    color: #A8C6E3;
+    font-size: 0.85em;
+}
 
 
-
-
-
-
-
-
-
-
+@media (max-width: 768px) {
+    .footer-primary {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-copyright {
+        margin-bottom: 15px;
+    }
+    .footer-links a {
+        margin: 0 8px;
+        display: inline-block;
+    }
+}

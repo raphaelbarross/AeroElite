@@ -1,16 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-      <link rel="stylesheet" href="../css/style.css">
+    <title>AeroElite - Contato</title>
+    <link rel="stylesheet" href="/css/contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/estilos.comuns.css">
 </head>
 <body>
+        <header>
+     <div class="borda">
+      <div class="left">
+        <img class="logo" src="../assents/logo.png" alt="AeroElite">
+        <h3>AeroElite</h3>
+        </div>
+        <nav class="nav-links"> 
+          <a href="index.html">Início</a>
+          <a href="frota.html">Frota</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
+    </header>
 
-        <img src="../assents/vibing.jpg" alt="">
-        
+    <section class="contato-container">
+
+        <div class="contato-header">
+            <h1>Entre em <span class="destaque">Contato</span></h1>
+            <p>Estamos prontos para atender suas necessidades de aviação particular. Entre em contato conosco e descubra como podemos tornar sua viagem excepcional.</p>
+        </div>
+
+        <div class="contato-content">
+            
+            <div class="coluna-form">
+                <div class="card card-form">
+                    <h2>Solicite um Orçamento</h2>
+                    
+                    <form>
+                        <div class="form-group-row">
+                            <div class="input-field">
+                                <label for="nome">Nome Completo *</label>
+                                <input type="text" id="nome" placeholder="Seu nome" required>
+                            </div>
+                            <div class="input-field">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" placeholder="seu@email.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group-row">
+                            <div class="input-field">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" placeholder="(11) 99999-9999">
+                            </div>
+                            <div class="input-field">
+                                <label for="servico">Serviço de Interesse</label>
+                                <select id="servico">
+                                    <option value="" disabled selected>Selecione um serviço</option>
+                                    <option value="fretamento">Fretamento</option>
+                                    <option value="aeronave">Compra de Aeronave</option>
+                                    <option value="gestao">Gestão de Aeronave</option>
+                                </select>
+                                <i class="fas fa-caret-down select-icon"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-field full-width">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" rows="4" placeholder="Conte-nos sobre suas necessidades de viagem..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="coluna-info">
+                
+                <div class="card info-card">
+                    <div class="info-icon"><i class="fas fa-phone"></i></div>
+                    <div class="info-details">
+                        <h4>Telefone</h4>
+                        <p>+55 (11) 3456-7890</p>
+                        <p>+55 (11) 9 8765-4321</p>
+                        <small>Disponível 24/7 para emergências</small>
+                    </div>
+                </div>
+
+                <div class="card info-card">
+                    <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="info-details">
+                        <h4>E-mail</h4>
+                        <p>contato@eliteaviation.com.br</p>
+                        <p>reservas@eliteaviation.com.br</p>
+                        <small>Resposta em até 2 horas</small>
+                    </div>
+                </div>
+
+                <div class="card info-card">
+                    <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="info-details">
+                        <h4>Endereço</h4>
+                        <p>Av. Paulista, 1000 - Sala 2001</p>
+                        <p>São Paulo - SP 01310-100</p>
+                        <small>Escritório principal</small>
+                    </div>
+                </div>
+
+                <div class="card info-card">
+                    <div class="info-icon"><i class="fas fa-clock"></i></div>
+                    <div class="info-details">
+                        <h4>Horário</h4>
+                        <p>Atendimento Comercial: Seg. a Sex., 9h às 18h</p>
+                        <p>Voos e Suporte: 24 horas por dia</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <!-- Linha Divisória Superior -->
+            <div class="divider"></div>
+
+            <div class="footer-primary">
+                <div class="footer-copyright">
+                    © 2024 Elite Aviation. Todos os direitos reservados.
+                </div>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+
+            <!-- Linha Divisória Inferior -->
+            <div class="divider"></div>
+
+            <div class="footer-certifications">
+                <div class="cert-title">Certificações</div>
+                <div class="cert-list">
+                    AAA • BBB • CCC DDD • EEE
+                </div>
+            </div>
+        </div>
+    </footer>
+    
 </body>
-
-
 </html>

@@ -1,19 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px; 
+}
+
+h2 {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+header {
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    padding: 5px 50px; 
+    box-sizing: border-box; 
+    background-color: #172B4D;
+    z-index: 100;
+}
+
+.borda {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.left {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; 
+    filter: brightness(0) invert(1);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #FFFFFF; 
+    text-decoration: none;
+    margin-left: 15px; 
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #000000;
+}
+
 .inicio {
     text-align: center; 
-    font-family: 'Arial', sans-serif;
     font-style: italic;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
-.sobre.nos{
-    color: rgb(26, 25, 25);
-    font-weight: bold;
-    background-color: black;
-}
+
 .inicio video {
     position: fixed;
     top: 0;
@@ -24,67 +83,96 @@
     filter: brightness(0.5);
     z-index: -100;
 }
-.sobre-nos {
-    color: rgb(233, 233, 233);  
-    text-decoration: solid;       
-    background-color:;  
-    padding: 5px;
-    transition: 0,3s;
-    color: rgb(253, 253, 253);
-    font-size: 1.3em;
-}
-.sobre-nos:hover {
-    color: rgb(65, 65, 65);
-    text-decoration: double;
-}
-header {
-    width: 100%;
-    position: fixed; 
-    top: 0;
-    padding: 5px 50px; 
-    box-sizing: border-box; 
-    background-color: rgba(109, 108, 108, 0.7);
-}
-.borda {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-}
-.nav-links a:hover {
-    color: rgb(56, 56, 56);
-}
-.nav-links {
-    display: flex;
-    align-items: center;
-}
-.left{
-    width: 200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 
-}
-.nav-links a {
-    color: rgb(247, 247, 247);
-    text-decoration: none;
-    margin-left: 15px; 
-    font-weight: bold;
-}
-.logo {
-    width: 100px; 
-    filter: brightness(0) invert(1);
-}
 .bem-vindo {
     text-align: center;
-}
-h1 {
-    font-size: 4em;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    margin-bottom: 20px; 
-}
-h2 {
-    font-size: 1.5em;
-    font-style: italic;
+    z-index: 1;
 }
 
+.sobre-nos {
+    color: #FFFFFF; 
+    text-decoration: none; 
+    background-color: rgba(168, 198, 227, 0.1);
+    padding: 2px ;
+    border-radius: 2px;
+    font-size: 1.3em;
+    font-style: normal;
+
+}
+
+
+.site-footer {
+    background-color: #0A1931; 
+    padding: 20px 0;
+    color: #A8C6E3; 
+    font-size: 0.9em;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.divider {
+    height: 1px;
+    background-color: rgba(168, 198, 227, 0.2); 
+    margin: 20px 0;
+}
+
+.footer-primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.footer-copyright {
+    color: #FFFFFF; 
+    font-weight: 500;
+}
+
+.footer-links a {
+    color: #A8C6E3;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF; 
+}
+
+.footer-certifications {
+    text-align: center;
+    padding: 10px 0 20px 0;
+    line-height: 1.8;
+}
+
+.cert-title {
+    font-weight: bold;
+    color: #FFFFFF; 
+    margin-bottom: 5px;
+}
+
+.cert-list {
+    color: #A8C6E3;
+    font-size: 0.85em;
+}
+
+@media (max-width: 768px) {
+    .footer-primary {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-copyright {
+        margin-bottom: 15px;
+    }
+    .footer-links a {
+        margin: 0 8px;
+        display: inline-block;
+    }
+    h1 {
+        font-size: 3em;
+    }
+}

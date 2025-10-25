@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0A1931;
+    color: #FFFFFF;
+}
+
+.contato-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 150px 20px;
+}
+
+.contato-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contato-header h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contato-header .destaque {
+    color: #A8C6E3;
+}
+
+.contato-header p {
+    color: #A8C6E3;
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contato-content {
+    display: flex;
+    gap: 30px;
+}
+
+.coluna-form {
+    flex: 3;
+}
+
+.coluna-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #172B4D;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.card-form h2 {
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    flex: 1;
+    position: relative;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 8px;
+    color: #A8C6E3;
+    font-size: 0.9em;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #0A1931;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    font-size: 1em;
+    resize: none;
+    transition: background-color 0.3s;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #A8C6E390;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid #A8C6E3;
+    background-color: #11223d;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+}
+.select-icon {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: #A8C6E3;
+    pointer-events: none;
+}
+
+.submit-btn {
+    align-self: flex-start;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+.submit-btn i {
+    margin-right: 10px;
+}
+
+.info-card {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.info-icon {
+    margin-right: 15px;
+    font-size: 1.5em;
+    color: #A8C6E3;
+}
+
+.info-details h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #FFFFFF;
+}
+
+.info-details p {
+    margin: 5px 0;
+    color: #A8C6E3;
+    line-height: 1.4;
+}
+
+.info-details small {
+    display: block;
+    margin-top: 8px;
+    color: #A8C6E3;
+    font-size: 0.85em;
+    opacity: 0.7;
+}
+
+site-footer {
+    background-color: #0A1931; 
+    padding: 20px 0;
+    color: #A8C6E3; 
+    font-size: 0.9em;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Linhas Divisórias */
+.divider {
+    height: 1px;
+    background-color: rgba(168, 198, 227, 0.2); 
+    margin: 2px 0;
+}
+
+/* Seção Principal (Copyright e Links) */
+.footer-primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 0;
+}
+
+.footer-copyright {
+    color: #FFFFFF; 
+    font-weight: 500;
+}
+
+/* Links (Política, Termos, Cookies) */
+.footer-links a {
+    color: #A8C6E3;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF; 
+}
+
+/* Seção de Certificações */
+.footer-certifications {
+    text-align: center;
+    padding: 1px 0 2px 0;
+    line-height: 1.8;
+}
+
+.cert-title {
+    font-weight: bold;
+    color: #FFFFFF; 
+    margin-bottom: 5px;
+}
+
+.cert-list {
+    color: #A8C6E3;
+    font-size: 0.85em;
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 768px) {
+    .footer-primary {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-copyright {
+        margin-bottom: 15px;
+    }
+    .footer-links a {
+        margin: 0 8px;
+        display: inline-block;
+    }
+}
