@@ -70,7 +70,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: rgb(247, 247, 247);
+    position: relative;
 }
 
 .inicio video {
@@ -82,19 +83,23 @@ header {
     object-fit: cover;
     filter: brightness(0.5);
     z-index: -100;
+
 }
 
 .bem-vindo {
     text-align: center;
     z-index: 1;
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .sobre-nos {
-    color: #FFFFFF; 
-    text-decoration: none; 
-    background-color: rgba(168, 198, 227, 0.1);
-    padding: 2px ;
+    color: #fefdff;
+    text-decoration: none;
+    padding: 2px;
     border-radius: 2px;
+    transition: background-color 0.3s ease;
     font-size: 1.3em;
     font-style: normal;
 
@@ -106,18 +111,21 @@ header {
     padding: 20px 0;
     color: #A8C6E3; 
     font-size: 0.9em;
+    text-align: center;
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+
 }
 
 .divider {
     height: 1px;
     background-color: rgba(168, 198, 227, 0.2); 
     margin: 20px 0;
+
 }
 
 .footer-primary {
@@ -130,6 +138,7 @@ header {
 .footer-copyright {
     color: #FFFFFF; 
     font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .footer-links a {
