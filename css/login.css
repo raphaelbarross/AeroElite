@@ -1,0 +1,81 @@
+
+:root {
+            --bg-color: #0f1a2e; 
+            --card-bg: #1c2d46; 
+            --text-color: #e0e0f0;
+            --label-color: #a0adc3; 
+            --primary-color-start: #4a72a8; 
+            --primary-color-end: #203756;  
+            --accent-color: #54a0ff; 
+            --input-bg: #152233; 
+            --input-text: #c0c0d8;
+            --button-secondary-bg: #334661; 
+            --border-color: #334661; 
+            --shadow-color: rgba(0, 0, 0, 0.5);
+            --active-button-bg: #273952; 
+        }
+
+body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 100vh;
+            padding:200px 20px;
+        }
+
+
+site-footer {
+    background-color: #0A1931; 
+    padding: 20px 0;
+    color: #A8C6E3; 
+    font-size: 0.9em;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Linhas Divisórias */
+.divider {
+    height: 1px;
+    background-color: rgba(168, 198, 227, 0.2); 
+    margin: 2px 0;
+}
+
+/* Seção Principal (Copyright e Links) */
+.footer-primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 0;
+}
+
+.footer-copyright {
+    color: #FFFFFF; 
+    font-weight: 500;
+}
+
+/* Links (Política, Termos, Cookies) */
+.footer-links a {
+    color: #A8C6E3;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF; 
+}
+
+/* Seção de Certificações */
+.footer-certifications {
+    text-align: center;
+    padding: 1px 0 2px 0;
+    line-height: 1.8;
+}
