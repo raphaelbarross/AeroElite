@@ -28,22 +28,23 @@
         </div>
 
         <div class="right">
-            <h1>Login</h1>
-            <form action="../php/registro--login.php" method="post">
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" required name="email"/>
-                </div>
-
-                <div>
-                    <label for="password">Senha</label>
-                    <input type="password" required name="senha"/>
-                </div>
-
-                <button name="login">Entrar</button>
-                <a href="registrar.html">Esqueceu sua senha?</a>
-            </form>
+    <h1>Login</h1>
+    <form id="loginForm" action="../php/registro--login.php" method="post">
+        <div>
+            <label for="email">Email</label>
+            <input type="email" required name="email" id="emailInput"/> 
         </div>
+
+        <div class="password-container"> 
+            <label for="password">Senha</label>
+            <input type="password" required name="senha" id="senhaInput"/>
+            <i class="fa-solid fa-eye" id="toggleSenha"></i> </div>
+
+        <button name="login">Entrar</button>
+        <a href="registrar.html">Esqueceu sua senha?</a>
+    </form>
+    <p>Não possui uma conta? <a href="registrar.html">Registre-se</a></p>
+</div>
     </main>
 
     <footer class="site-footer">
@@ -66,5 +67,6 @@
             </div>
         </div>
     </footer>
+<script src="../js/login.js"></script>
 </body>
 </html>
