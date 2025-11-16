@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px; 
+}
+
+h2 {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #005bbb;
+}
+
+header {
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    padding: 5px 50px; 
+    box-sizing: border-box; 
+    background-color: #172B4D;
+    z-index: 100;
+}
+
+.borda {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.left {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; 
+    filter: brightness(0) invert(1);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #FFFFFF; 
+    text-decoration: none;
+    margin-left: 15px; 
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #000000;
+}
+
+.perfil {
+    width: 4rem;
+    padding-left: 1.5rem;
+}
+
+body {
+    background-color: #ececec;
+}
+
+.usuario__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: #FFFFFF;
+    width: 25rem;
+}
+.usuario__foto {
+    background-color: #ececec;
+    width: 20rem;
+}
+
+.usuario__status, .usuario__milhas {
+    color: #000000;
+    margin:0;
+}
+
+.usuario__botao {
+    background: #005bbb;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
