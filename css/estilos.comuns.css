@@ -41,3 +41,9 @@ header {
 .nav-links a:hover {
     color: rgb(56, 56, 56);
 }
+.reserva {
+    background-color: #422ef3; 
+    color: #FFFFFF; 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+}
