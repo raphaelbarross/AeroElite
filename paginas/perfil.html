@@ -26,14 +26,50 @@
 
     <main>
       <section class="usuario">
-        <div class="usuario__info">
         <img class="usuario__foto" src="../assents/perfil.png" alt="Foto de perfil">
         <h2 class="usuario__nome">Nome do usuário</h2>
         <p class="usuario__status">Status: <strong>Gold</strong></p>
         <p class="usuario__milhas">Milhas acumuladas: <strong>52.340</strong></p>
-        <button class="usuario__botao">Editar Perfil</button>
-      </div>
+        <button id="botao__Editar" class="usuario__botao">Editar Perfil</button>
       </section>
+
+      <div id="modal__Editar" class="modal">
+
+    <div class="modal__info">
+        <span class="close">&times;</span>
+
+        <h2>Editar Perfil</h2>
+
+        <form enctype="multipart/form-data">
+
+            <label>Nome:</label>
+            <input type="text" name="nome" required placeholder="Nome: ">
+
+            <label>Gênero:</label>
+            <select name="genero" required>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Nbinario">GLS</option>
+            </select>
+
+            <label>Telefone:</label>
+            <input type="tel" name="telefone" required placeholder="celular">
+
+            <label>Data de nascimento:</label>
+            <input type="date" name="nascimento" required>
+
+            <label>Foto de perfil:</label>
+            <input type="file" name="foto">
+
+            <button type="submit" class="btn-salvar">Salvar Alterações</button>
+        </form>
+    </div>
+
+</div>
+
+<script src="../js/perfil.js"></script>
+
+      <section class="viagens">  </section>
 
     </main>
 </body>
