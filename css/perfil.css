@@ -149,3 +149,234 @@ input, select {
 .btn-salvar:hover {
     background-color: #1e8449;
 }
+/* Media Queries Responsivas Integradas */
+
+/* ----- Até 1100px ----- */
+@media (max-width: 1100px) {
+    /* Grid de serviços passa de 2 colunas para 1 */
+    .servicos-principais {
+        grid-template-columns: 1fr;
+        padding: 0 30px;
+    }
+
+    /* Ajuste leve no header */
+    header {
+        padding: 10px 40px;
+    }
+
+    /* Ajuste de títulos grandes */
+    .meu-titulo h1 {
+        font-size: 3.2em;
+    }
+
+    .bem-vindo h1 {
+        font-size: 4.5em;
+    }
+}
+
+/* ----- Até 900px ----- */
+@media (max-width: 900px) {
+    .nav-links a {
+        margin-left: 20px;
+        font-size: 0.95em;
+    }
+
+    .logo {
+        width: 95px;
+    }
+
+    .meu-titulo {
+        padding: 150px 20px 60px 20px;
+    }
+
+    .meu-titulo h1 {
+        font-size: 2.9em;
+    }
+
+    .bem-vindo h1 {
+        font-size: 4em;
+    }
+
+    h1 {
+        font-size: 3.8em;
+    }
+}
+
+/* ----- Até 700px (Mobile principal) ----- */
+@media (max-width: 700px) {
+
+    header {
+        padding: 12px 20px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .nav-links {
+        display: none; /* Some igual ao primeiro CSS */
+    }
+
+    .inicio {
+        padding: 0 20px;
+    }
+
+    .bem-vindo h1 {
+        font-size: 3.3em;
+    }
+
+    .bem-vindo h2 {
+        font-size: 1.4em;
+    }
+
+    /* Título da página */
+    .meu-titulo {
+        padding: 120px 20px 60px 20px;
+    }
+
+    .meu-titulo h1 {
+        font-size: 2.5em;
+    }
+
+    .meu-titulo h2 {
+        font-size: 1.35em;
+    }
+
+    /* Grid vira colunar */
+    .servicos-principais {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .servico {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 3.2em;
+    }
+
+    /* Footer */
+    .footer-primary {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .footer-links a {
+        margin: 0 12px;
+        display: inline-block;
+    }
+}
+
+/* ----- Até 480px (Mobile pequeno) ----- */
+@media (max-width: 480px) {
+    .logo {
+        width: 70px;
+    }
+
+    .bem-vindo h1 {
+        font-size: 2.6em;
+    }
+
+    .sobre-nos {
+        font-size: 1.2em;
+        padding: 10px 22px;
+    }
+
+    .meu-titulo h1 {
+        font-size: 2.1em;
+    }
+
+    .meu-titulo h2 {
+        font-size: 1.15em;
+    }
+
+    h1 {
+        font-size: 2.7em;
+    }
+
+    .footer-links a {
+        margin: 6px;
+    }
+}
+
+@media (max-width: 1100px) {
+    main {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    .left h1 { font-size: 45px; }
+    .right { width: 90%; padding: 35px 40px; }
+}
+
+@media (max-width: 900px) {
+    .left h1 { font-size: 40px; }
+    .left p { font-size: 16px; }
+    .right { padding: 30px; }
+    .right h1 { font-size: 30px; }
+}
+
+
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+    .left h1 { font-size: 34px; }
+    .left p { font-size: 15px; max-width: 100%; }
+    .logo { width: 80px; }
+    .right { width: 100%; padding: 25px; }
+    .right h1 { font-size: 26px; }
+    .right input, .right button { font-size: 14px; padding: 10px; }
+}
+
+
+@media (max-width: 480px) {
+    .left h1 { font-size: 28px; }
+    .left p { font-size: 14px; }
+    .icon-rede-sociais span a { font-size: 22px; margin-right: 12px; }
+    .right { padding: 20px; }
+    .right h1 { font-size: 22px; }
+    .right input, .right button { font-size: 13px; padding: 9px; }
+}
+
+@media (max-width: 1100px) {
+    h1 { font-size: 3.2em; }
+    header { padding: 5px 30px; }
+    .usuario { width: 22rem; }
+    .usuario__foto { width: 18rem; }
+}
+
+
+@media (max-width: 900px) {
+    .nav-links a { margin-left: 10px; font-size: 0.95em; }
+    .logo { width: 85px; }
+    .usuario { width: 20rem; }
+    .usuario__foto { width: 16rem; }
+}
+
+
+@media (max-width: 700px) {
+    header { padding: 8px 20px; }
+    .nav-links { display: none; }
+    h1 { font-size: 2.5em; }
+    .usuario { width: 90%; padding: 15px; }
+    .usuario__foto { width: 100%; }
+    input, select { font-size: 14px; padding: 7px; }
+    .modal__info { width: 85%; }
+    .left { width: auto; }
+}
+
+
+@media (max-width: 480px) {
+    .logo { width: 70px; }
+    h1 { font-size: 2.1em; }
+    .usuario { width: 100%; padding: 12px; }
+    .usuario__botao { padding: 8px 16px; font-size: 14px; }
+    .modal__info { width: 90%; padding: 15px; }
+    input, select { font-size: 13px; padding: 6px; }
+}
+

@@ -332,3 +332,73 @@ header {
 /* ------------------------------------------------------------------- */
 /* --- Media Queries (Responsividade) --- */
 /* ------------------------------------------------------------------- */
+@media (max-width: 1100px) {
+
+.servicos-principais {
+grid-template-columns: 1fr;
+gap: 20px;
+}
+
+
+.servico {
+padding: 25px 18px;
+}
+
+
+h1 {
+font-size: 3.2em;
+}
+
+
+
+.footer-primary {
+flex-direction: column;
+gap: 12px;
+text-align: center;
+}
+
+
+.footer-links a {
+margin: 0 12px;
+display: inline-block;
+}
+}
+
+
+
+@media (max-width: 480px) {
+.logo {
+width: 70px;
+}
+
+
+.bem-vindo h1 {
+font-size: 2.6em;
+}
+
+
+.sobre-nos {
+font-size: 1.2em;
+padding: 10px 22px;
+}
+
+
+.meu-titulo h1 {
+font-size: 2.1em;
+}
+
+
+.meu-titulo h2 {
+font-size: 1.15em;
+}
+
+
+h1 {
+font-size: 2.7em;
+}
+
+
+.footer-links a {
+margin: 6px;
+}
+}

@@ -184,14 +184,13 @@ site-footer {
     padding: 0 20px;
 }
 
-/* Linhas Divisórias */
 .divider {
     height: 1px;
     background-color: rgba(168, 198, 227, 0.2); 
     margin: 2px 0;
 }
 
-/* Seção Principal (Copyright e Links) */
+
 .footer-primary {
     display: flex;
     justify-content: space-between;
@@ -204,7 +203,7 @@ site-footer {
     font-weight: 500;
 }
 
-/* Links (Política, Termos, Cookies) */
+
 .footer-links a {
     color: #A8C6E3;
     text-decoration: none;
@@ -216,7 +215,7 @@ site-footer {
     color: #FFFFFF; 
 }
 
-/* Seção de Certificações */
+
 .footer-certifications {
     text-align: center;
     padding: 1px 0 2px 0;
@@ -234,7 +233,6 @@ site-footer {
     font-size: 0.85em;
 }
 
-/* Responsividade para Mobile */
 @media (max-width: 768px) {
     .footer-primary {
         flex-direction: column;

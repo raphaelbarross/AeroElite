@@ -125,3 +125,55 @@
         }
         .right a:hover { color: white; }
         
+
+        @media (max-width: 1100px) {
+.footer-links a {
+margin: 6px;
+}
+}
+
+
+@media (max-width: 1100px) {
+main {
+flex-direction: column;
+gap: 40px;
+text-align: center;
+}
+.left h1 { font-size: 45px; }
+.right { width: 90%; padding: 35px 40px; }
+}
+
+
+
+@media (max-width: 900px) {
+.left h1 { font-size: 40px; }
+.left p { font-size: 16px; }
+.right { padding: 30px; }
+.right h1 { font-size: 30px; }
+}
+
+
+
+@media (max-width: 700px) {
+main {
+flex-direction: column;
+gap: 30px;
+padding: 0 20px;
+}
+.left h1 { font-size: 34px; }
+.left p { font-size: 15px; max-width: 100%; }
+.logo { width: 80px; }
+.right { width: 100%; padding: 25px; }
+.right h1 { font-size: 26px; }
+.right input, .right button { font-size: 14px; padding: 10px; }
+}
+
+
+@media (max-width: 480px) {
+.left h1 { font-size: 28px; }
+.left p { font-size: 14px; }
+.icon-rede-sociais span a { font-size: 22px; margin-right: 12px; }
+.right { padding: 20px; }
+.right h1 { font-size: 22px; }
+.right input, .right button { font-size: 13px; padding: 9px; }
+}
