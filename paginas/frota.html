@@ -1,133 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frota AeroElite</title>
-    <link rel="stylesheet" href="../css/estilos.comuns.css">
-    <link rel="stylesheet" href="../css/frota.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frota AeroElite</title>
+  <link rel="stylesheet" href="../css/estilos.comuns.css" />
+  <link rel="stylesheet" href="../css/frota.css" />
 </head>
+<body>
 <header>
   <div class="borda">
-    <div class="left">
-      <img class="logo" src="../assents/logo.png" alt="AeroElite">
+    <div class="left logo-container">
+      <img class="logo" src="../assents/logo.png" alt="AeroElite" />
       <h3>AeroElite</h3>
     </div>
 
-    <nav class="nav-links"> 
+    <nav class="nav-links">
       <a href="index.html">Início</a>
       <a href="frota.html">Frota</a>
       <a href="servicos.html">Serviços</a>
       <a href="sobre.html">Sobre</a>
       <a href="contato.html">Contato</a>
-      <a href="/paginas/reserva.html">Reserve Já</a>
+      <a class="cta" href="/paginas/reserva.html">Reserve Já</a>
     </nav>
   </div>
 </header>
 
+<main>
+  <section class="frota-hero">
+    <h2>Sobre Nossa Frota</h2>
+    <p>Nós temos as melhores aeronaves do mercado, referência em conforto e qualidade. Veja alguns exemplos a seguir:
+</p>
+  </section>
 
-  <main>
-    <section class="frota">
-      <h2>Sobre a Frota</h2>
-      <p>Nós temos as melhores aeronaves do mercado, referência em conforto e qualidade. Veja alguns exemplos a seguir:</p>
-    </section>
+  <section class="cards-grid">
+    <article class="aeronave-card">
+      <div class="card-media">
+        <img src="../assents/cessna.jpg" alt="Cessna Citation" />
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Cessna Citation Mustang</h3>
+        <p class="card-sub">Jato Executivo Leve</p>
 
-    <section class="lista-aeronaves">
-  <article class="aeronave-card">
-    <img src="../assents/cessna.jpg" alt="Cessna Citation">
-    <h3>Cessna Citation Mustang</h3>
-    <p>Modelo 510, é um jato leve muito apreciado no segmento de aviação executiva.</p>
-    <button>Saiba mais</button>
-    <div class="info-extra" hidden>
-    <p>
-      O Cessna Citation Mustang (Model 510) é um jato executivo leve (VLJ) de dois motores Pratt & Whitney PW615F, operável por um único piloto, com alcance de cerca de 2.000 km, velocidade de cruzeiro de 630 km/h, teto de 41.000 pés e cabine para até 4 passageiros, produzido entre 2006 e 2017.
-    </p>
-  </article>
+        <ul class="card-specs">
+          <li><strong>Passageiros:</strong> 4</li>
+          <li><strong>Alcance:</strong> 2.000 km</li>
+        </ul>
 
-  <br>
-
-  <article class="aeronave-card">
-    <img src="../assents/embraer.jpg" alt="Embraer Phenom">
-    <h3>Embraer Phenom 100</h3>
-    <p>É um jato executivo da categoria Very Light Jet (VLJ), desenvolvido pela Embraer.</p>
-    <button>Saiba mais</button>
-
-    <div class="info-extra" hidden>
-    <p>
-O Embraer Phenom 100 é um jato executivo leve bimotor, operável por um único piloto, com alcance de cerca de 2.180 km, velocidade de cruzeiro de 720 km/h, teto de 41.000 pés, cabine para até 6 passageiros e produzido pela Embraer desde 2008.
-    </p>
-  </article>
-  <br>
-  <article class="aeronave-card">
-    <img src="../assents/pilatus.jpg" alt="Pilatus PC-12">
-    <h3>Pilatus PC-12</h3>
-    <p>É um jato monomotor turboélice que se destaca pela sua versatilidade e eficiência.</p>
-    <button>Saiba mais</button>
-    <div class="info-extra" hidden>
-    <p>
-O Pilatus PC-12 é um avião monomotor turboélice suíço, versátil e pressurizado, com motor Pratt & Whitney PT6A-67P, alcance de cerca de 3.400 km, velocidade de cruzeiro de 528 km/h, teto de 30.000 pés, capacidade para até 9 passageiros, excelente desempenho em pistas curtas e não pavimentadas, cabine ampla e configurável entre: executiva, carga, médica ou mista, operável por um único piloto, e produzido pela Pilatus Aircraft desde 1994, sendo amplamente usado em aviação executiva, transporte regional, missões militares e aeromédicas. </p>
-  </article>
-  <br>
-  <article class="aeronave-card">
-    <img src="../assents/bombardier.jpg" alt="Bombardier Global">
-    <h3>Bombardier Global Express</h3>
-    <p>É um jato executivo de cabine grande e longo alcance.</p>
-    <button>Saiba mais</button>
-    <div class="info-extra" hidden>
-    <p>
-O Bombardier Global Express é um jato executivo intercontinental de grande porte e longo alcance, bimotor Rolls-Royce BR710, capaz de voar até cerca de 11.000 km sem escalas a uma velocidade de cruzeiro de 900 km/h, com teto de 51.000 pés, cabine luxuosa para até 14 passageiros, alcance global ligando continentes sem reabastecimento, aviônicos avançados (Honeywell Primus 2000XP), e produzido pela Bombardier Aerospace desde 1998 como uma das aeronaves mais prestigiadas da aviação executiva. </p>
-  </article>
-  <br>
-  <article class="aeronave-card">
-    <img src="../assents/hondaJet.jpg" alt="HondaJet">
-    <h3>HondaJet</h3>
-    <p>É um jato executivo inovador e altamente reconhecido no segmento de aviação.</p>
-    <button>Saiba mais</button>
-    <div class="info-extra" hidden>
-       
-    <p>
-O HondaJet é um jato executivo leve bimotor, com motores GE Honda HF120 montados sobre as asas (design exclusivo Over-The-Wing Engine Mount), alcance de cerca de 2.200 km, velocidade de cruzeiro de 780 km/h, teto de 43.000 pés, cabine para até 5 passageiros, operável por um único piloto, reconhecido por sua eficiência, baixo ruído e alto desempenho, produzido pela Honda Aircraft Company desde 2015.
-  </article>
-</section>
-<br>
-  <article class="aeronave-card">
-    <img src="../assents/Phantom.jpeg" alt="Ru'swum-pattern Phantom">
-    <h3>Ru'swum-pattern Phantom</h3>
-    <p>é um veículo de transporte de tropas Covenant usado principalmente para implantar unidades terrestres e equipamentos de forma rápida e eficiente.</p>
-    <button>Saiba mais</button>
-    <div class="info-extra" hidden>
-    <p>
-O Ru’swum-pattern Phantom é uma nave de desembarque do Covenant usado para inserção e apoio, tanto atmosférico quanto exo-atmosférico, com capacidade para transportar cerca de 24–30 tropas ou até mesmo cargas e veículos leves. É armado para apoio de fogo durante imserções. 
-Usado extensivamente durante a Guerra Humano-Covenant, o Phantom serve como transporte tático principal em desembarques, destacando-se por flexibilidade entre papel de nave de desembarque e combate.  </article>
-</section>
-    </main>
-
-  <footer class="site-footer">
-        <div class="footer-content">
-            <div class="divider"></div>
-
-            <div class="footer-primary">
-                <div class="footer-copyright">
-                    © 2024 Elite Aviation. Todos os direitos reservados.
-                </div>
-                <div class="footer-links">
-                    <a href="#">Política de Privacidade</a>
-                    <a href="#">Termos de Uso</a>
-                    <a href="#">Cookies</a>
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="footer-certifications">
-                <div class="cert-title">Certificações</div>
-                <div class="cert-list">
-                    AAA • BBB • CCC DDD • EEE
-                </div>
-            </div>
+        <div class="card-actions">
+          <button class="btn-outline saiba-mais">Saiba mais</button>
+          <button class="btn-primary solicitar" data-modelo="Cessna Citation Mustang">Solicitar Este Jato</button>
         </div>
-    </footer>
-    <script src="../js/frota.js"></script>
+
+        <div class="info-extra" hidden>
+          <p>O Cessna Citation Mustang (Model 510) é um jato executivo leve (VLJ) de dois motores Pratt & Whitney PW615F, operável por um único piloto, com alcance de cerca de 2.000 km, velocidade de cruzeiro de 630 km/h, teto de 41.000 pés e cabine para até 4 passageiros, produzido entre 2006 e 2017.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="aeronave-card">
+      <div class="card-media">
+        <img src="../assents/embraer.jpg" alt="Embraer Phenom" />
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Embraer Phenom 100</h3>
+        <p class="card-sub">Jato Executivo Leve</p>
+
+        <ul class="card-specs">
+          <li><strong>Passageiros:</strong> 4-6</li>
+          <li><strong>Alcance:</strong> 2.180 km</li>
+        </ul>
+
+        <div class="card-actions">
+          <button class="btn-outline saiba-mais">Saiba mais</button>
+          <button class="btn-primary solicitar" data-modelo="Embraer Phenom 100">Solicitar Este Jato</button>
+        </div>
+
+        <div class="info-extra" hidden>
+          <p>O Embraer Phenom 100 é um jato executivo leve bimotor, operável por um único piloto, com alcance de cerca de 2.180 km, velocidade de cruzeiro de 720 km/h, teto de 41.000 pés, cabine para até 6 passageiros e produzido pela Embraer desde 2008.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="aeronave-card">
+      <div class="card-media">
+        <img src="../assents/pilatus.jpg" alt="Pilatus PC-12" />
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Pilatus PC-12</h3>
+        <p class="card-sub">Turboélice Executivo</p>
+
+        <ul class="card-specs">
+          <li><strong>Passageiros:</strong> até 9</li>
+          <li><strong>Alcance:</strong> 3.400 km</li>
+        </ul>
+
+        <div class="card-actions">
+          <button class="btn-outline saiba-mais">Saiba mais</button>
+          <button class="btn-primary solicitar" data-modelo="Pilatus PC-12">Solicitar Este Jato</button>
+        </div>
+
+        <div class="info-extra" hidden>
+          <p>O Pilatus PC-12 é um avião monomotor turboélice suíço, versátil e pressurizado, com motor Pratt & Whitney PT6A-67P, alcance de cerca de 3.400 km, velocidade de cruzeiro de 528 km/h, teto de 30.000 pés, capacidade para até 9 passageiros, excelente desempenho em pistas curtas e não pavimentadas, cabine ampla e configurável entre: executiva, carga, médica ou mista, operável por um único piloto, e produzido pela Pilatus Aircraft desde 1994, sendo amplamente usado em aviação executiva, transporte regional, missões militares e aeromédicas.</p>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="aeronave-card">
+      <div class="card-media">
+        <img src="../assents/bombardier.jpg" alt="Bombardier Global" />
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Bombardier Global Express</h3>
+        <p class="card-sub">Jato Executivo Longo Alcance</p>
+
+        <ul class="card-specs">
+          <li><strong>Passageiros:</strong> até 14</li>
+          <li><strong>Alcance:</strong> 11.000 km</li>
+        </ul>
+
+        <div class="card-actions">
+          <button class="btn-outline saiba-mais">Saiba mais</button>
+          <button class="btn-primary solicitar" data-modelo="Bombardier Global Express">Solicitar Este Jato</button>
+        </div>
+
+        <div class="info-extra" hidden>
+          <p>O Bombardier Global Express é um jato executivo intercontinental de grande porte e longo alcance, bimotor Rolls-Royce BR710, capaz de voar até cerca de 11.000 km sem escalas a uma velocidade de cruzeiro de 900 km/h, com teto de 51.000 pés, cabine luxuosa para até 14 passageiros, alcance global ligando continentes sem reabastecimento, aviônicos avançados (Honeywell Primus 2000XP), e produzido pela Bombardier Aerospace desde 1998 como uma das aeronaves mais prestigiadas da aviação executiva.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="aeronave-card premium-card">
+      <div class="card-media">
+        <img src="../assents/" alt="Phantom" />
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Ru'swum-pattern Phantom</h3>
+        <p class="card-sub">Transporte Tático</p>
+
+        <ul class="card-specs">
+          <li><strong>Passageiros:</strong> 24–30</li>
+          <li><strong>Alcance:</strong> 30.000 km</li>
+        </ul>
+
+        <div class="card-actions">
+          <button class="btn-outline saiba-mais">Saiba mais</button>
+          <button class="btn-primary solicitar" data-modelo="Ru'swum-pattern Phantom">Solicitar Este Jato</button>
+        </div>
+
+        <div class="info-extra" hidden>
+          <p>O Ru’swum-pattern Phantom é uma nave de desembarque do Covenant usado para inserção e apoio, tanto atmosférico quanto exo-atmosférico, com capacidade para transportar cerca de 24–30 tropas ou até mesmo cargas e veículos leves. É armado para apoio de fogo durante imserções. Usado extensivamente durante a Guerra Humano-Covenant, o Phantom serve como transporte tático principal em desembarques, destacando-se por flexibilidade entre papel de nave de desembarque e combate.</p>
+        </div>
+      </div>
+    </article>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="divider"></div>
+    <div class="footer-primary">
+      <div class="footer-copyright">© 2024 Elite Aviation. Todos os direitos reservados.</div>
+      <div class="footer-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="footer-certifications">
+      <div class="cert-title">Certificações</div>
+      <div class="cert-list">AAA • BBB • CCC • DDD • EEE</div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/frota.js"></script>
 </body>
 </html>
