@@ -26,8 +26,8 @@
 
     <main>
       <section class="usuario">
-        <img class="usuario__foto" src="../assents/perfil.png" alt="Foto de perfil">
-        <h2 class="usuario__nome">Nome do usuário</h2>
+        <img class="usuario__foto"src="../assents/<?php echo $usuario['foto'] ?: 'perfil.png'; ?>"alt="Foto de perfil">
+        <h2 class="usuario__nome"><?php echo $usuario['nome']; ?></h2>
         <p class="usuario__status">Status: <strong>Gold</strong></p>
         <p class="usuario__milhas">Milhas acumuladas: <strong>52.340</strong></p>
         <button id="botao__Editar" class="usuario__botao">Editar Perfil</button>
@@ -40,7 +40,7 @@
 
         <h2>Editar Perfil</h2>
 
-        <form enctype="multipart/form-data">
+        <form action="../php/editar.php" method="POST"enctype="multipart/form-data">
 
             <label>Nome:</label>
             <input type="text" name="nome" required placeholder="Nome: ">
