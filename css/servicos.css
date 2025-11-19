@@ -112,6 +112,11 @@ header {
     border-bottom: 2px solid var(--primary-accent-light); /* Destaque sutil */
 }
 
+.perfil {
+    width: 4rem;
+    padding-left: 1.5rem;
+}
+
 /* ------------------------------------------------------------------- */
 /* --- Estilos da Seção de Vídeo (Início) --- */
 /* ------------------------------------------------------------------- */

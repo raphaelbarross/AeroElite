@@ -19,7 +19,7 @@
           <a href="sobre.html">Sobre</a>
           <a href="contato.html">Contato</a>
           <a class="reserva" href="reserva.html">Reserve Já</a>
-          <a href="perfil.html"><img class="perfil" src="../assents/perfil.png" alt="perfil"></a>
+          <a href="perfil.php"><img class="perfil" src="../assents/perfil.png" alt="perfil"></a>
         </nav>
       </div>
     </header>
@@ -47,7 +47,7 @@
 
             <label>Gênero:</label>
             <select name="genero" required>
-                <option value="Masculino">Masculino</option>
+                <option value="Masculino" >Masculino</option>
                 <option value="Feminino">Feminino</option>
                 <option value="Nbinario">GLS</option>
             </select>

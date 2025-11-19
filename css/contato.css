@@ -248,3 +248,8 @@ site-footer {
         display: inline-block;
     }
 }
+
+.perfil {
+    width: 4rem;
+    padding-left: 1.5rem;
+}

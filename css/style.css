@@ -105,6 +105,11 @@ header {
 
 }
 
+.perfil {
+    width: 4rem;
+    padding-left: 1.5rem;
+}
+
 
 .site-footer {
     background-color: #0A1931; 
