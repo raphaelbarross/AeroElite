@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['id'])) {
+    die("Usuário não logado.");
+}
+
+$id = $_SESSION['id'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head> <meta charset="UTF-8">
@@ -26,8 +37,8 @@
 
     <main>
       <section class="usuario">
-        <img class="usuario__foto"src="../assents/<?php echo $usuario['foto'] ?: 'perfil.png'; ?>"alt="Foto de perfil">
-        <h2 class="usuario__nome"><?php echo $usuario['nome']; ?></h2>
+        <img class="usuario__foto"src="../assents/<?php echo $_SESSION['foto'] ?: 'perfil.png'; ?>"alt="Foto de perfil">
+        <h2 class="usuario__nome"><?php echo $_SESSION['nome']; ?></h2>
         <p class="usuario__status">Status: <strong>Gold</strong></p>
         <p class="usuario__milhas">Milhas acumuladas: <strong>52.340</strong></p>
         <button id="botao__Editar" class="usuario__botao">Editar Perfil</button>
@@ -61,7 +72,7 @@
             <label>Foto de perfil:</label>
             <input type="file" name="foto">
 
-            <button type="submit" class="btn-salvar">Salvar Alterações</button>
+            <button type="submit" name="btn__salvar" class="btn-salvar">Salvar Alterações</button>
         </form>
     </div>
 

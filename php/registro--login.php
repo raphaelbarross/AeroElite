@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('conexao.php');
 
 if (isset($_POST['cadastro'])) {
@@ -15,23 +16,33 @@ if (isset($_POST['cadastro'])) {
 }
 
 if (isset($_POST['login'])) {
-   $email = $_POST['email'];
-   $senha = $_POST['senha'];
 
-   $verificaEmail = $conexao->query("SELECT * FROM usuario WHERE email = '$email'");
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
 
-   if ($verificaEmail->num_rows > 0) {
-      $usuario = $verificaEmail->fetch_assoc();
+    $query = $conexao->query("SELECT * FROM usuario WHERE email = '$email'");
 
-      if ($usuario["senha"] === $senha) {
-         header("location: ../paginas/index.html");
-      } else {
-         header("location: ../paginas/login.html");
-      }
-   } else {
-      header("location: ../paginas/registrar.html");
-   }
-   exit();
+    if ($query->num_rows > 0) {
+
+        $usuario = $query->fetch_assoc();
+
+        if ($usuario["senha"] === $senha) {
+
+            $_SESSION['id'] = $usuario['id'];
+            $_SESSION['nome'] = $usuario['nome'];
+            $_SESSION['foto'] = $usuario['foto'];
+            $_SESSION['usuario'] = $usuario;
+
+            header("Location: ../paginas/perfil.php");
+            exit();
+        } 
+        
+        header("Location: ../paginas/login.html");
+        exit();
+    } 
+    
+    header("Location: ../paginas/registrar.html?err=email");
+    exit();
 }
 
 ?>

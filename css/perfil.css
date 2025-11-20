@@ -77,13 +77,18 @@ header {
     border-radius: 1rem;
     background-color: #11223d;
     width: 25rem;
-    border: 2px;
-    border-color: aliceblue;
+    border: solid 2px;
+    border-color: #FFFFFF;
 }
 
 
 .usuario__foto {
     width: 20rem;
+}
+
+.usuario__nome {
+    color: #FFFFFF;
+    size: 7rem;
 }
 
 .usuario__status, .usuario__milhas {
