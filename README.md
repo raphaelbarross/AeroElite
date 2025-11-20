@@ -14,7 +14,7 @@ O objetivo é criar um site utilizando **HTML, CSS, PHP e banco de dados**, apli
 - Raphael Barros
 - Daniel David
 - Eduardo Gomes
-- ...
+- Kauan Borges
 
 ## Estrutura do Projeto
 - `index.html` → Página inicial  
