@@ -106,11 +106,7 @@ header {
     padding: 5px 0;
 }
 
-.nav-links a:hover {
-    color: var(--primary-accent-light);
-    transform: translateY(-2px);
-    border-bottom: 2px solid var(--primary-accent-light); /* Destaque sutil */
-}
+
 
 .perfil {
     width: 4rem;
