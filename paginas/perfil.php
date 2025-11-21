@@ -1,8 +1,10 @@
 <?php
+ini_set('session.cookie_lifetime', 0);
+ini_set('session.gc_maxlifetime', 0);
 session_start();
 
 if (!isset($_SESSION['id'])) {
-    die("Usuário não logado.");
+    header("Location: login.html");
 }
 
 $id = $_SESSION['id'];
