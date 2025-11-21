@@ -41,3 +41,49 @@ header {
 .nav-links a:hover {
     color: rgb(56, 56, 56);
 }
+.reserva {
+    background-color: #422ef3; 
+    color: #FFFFFF; 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+}
+.footer-primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.footer-copyright {
+    color: #FFFFFF; 
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.footer-links a {
+    color: #A8C6E3;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF; 
+}
+
+.footer-certifications {
+    text-align: center;
+    padding: 10px 0 20px 0;
+    line-height: 1.8;
+}
+
+.cert-title {
+    font-weight: bold;
+    color: #FFFFFF; 
+    margin-bottom: 5px;
+}
+
+.cert-list {
+    color: #A8C6E3;
+    font-size: 0.85em;
+}

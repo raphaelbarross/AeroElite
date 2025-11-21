@@ -28,34 +28,34 @@
             
         </div>
         
-        <div class="right">
-
-            <h1>Registrar</h1>
-            <form>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" required>
-                </div>
-
-                <div>
-                    <label for="password">Senha</label>
-                    <input type="password" required>
-                </div>
-
-                <div>
-                    <label for="password">Confirme Senha</label>
-                    <input type="password" required>
-                </div>
-
-                <button>
-                    Registrar Agora
-                </button>
-
-                
-            </form>
-            
+       <div class="right">
+    <h1>Registrar</h1>
+    <form id="registroForm" action="../php/registro--login.php" method="post">
+        
+        <div>
+            <label for="email">Email</label>
+            <input type="email" required name="email" id="emailInput">
         </div>
 
+        <div class="password-container">
+            <label for="password">Senha</label>
+            <input type="password" required name="senha" id="senhaInput">
+            <i class="fa-solid fa-eye" id="toggleSenha1"></i>
+        </div>
+
+        <div class="password-container">
+            <label for="password">Confirme Senha</label>
+            <input type="password" required name="confirma_senha" id="confirmaSenhaInput">
+            <i class="fa-solid fa-eye" id="toggleSenha2"></i>
+            <p id="senhaErro" class="mensagem-erro"></p>
+        </div>
+
+        <button name="cadastro">
+            Registrar Agora
+        </button>
+    </form>
+    </div>
+<script src="../js/registrar.js"></script>
    </main>
 
    <footer class="site-footer">
@@ -85,5 +85,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/registrar.js"></script>
+    
 </body>
 </html>

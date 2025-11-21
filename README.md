@@ -12,9 +12,10 @@ O objetivo é criar um site utilizando **HTML, CSS, PHP e banco de dados**, apli
 
 ## Equipe
 - Raphael Barros
-- ...
-- ...
-- ...
+- Daniel David
+- Eduardo Gomes
+- Kauan Borges
+- Emily Vitória
 
 ## Estrutura do Projeto
 - `index.html` → Página inicial  

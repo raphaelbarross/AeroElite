@@ -6,8 +6,6 @@
     <title>Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="../css/login.css">
-
-    
 </head>
 
 <body>
@@ -29,27 +27,31 @@
 
         <div class="right">
             <h1>Login</h1>
-            <form>
+            <form id="loginForm" action="../php/registro--login.php" method="post">
+                
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" required />
+                    <input type="email" required name="email" id="emailInput"/>
                 </div>
 
-                <div>
+                <div class="password-container"> 
                     <label for="password">Senha</label>
-                    <input type="password" required />
+                    <input type="password" required name="senha" id="senhaInput"/>
+                    <i class="fa-solid fa-eye" id="toggleSenha"></i> 
                 </div>
 
-                <button>Entrar</button>
+                <button name="login">Entrar</button>
                 <a href="registrar.html">Esqueceu sua senha?</a>
+
             </form>
+            
+            <p>Não possui uma conta? <a href="registrar.html">Registre-se</a></p>
         </div>
-    </main>
+        </main>
 
     <footer class="site-footer">
         <div class="footer-content">
             <div class="divider"></div>
-
             <div class="footer-primary">
                 <div class="footer-copyright">© 2024 Elite Aviation. Todos os direitos reservados.</div>
                 <div class="footer-links">
@@ -58,7 +60,6 @@
                     <a href="#">Cookies</a>
                 </div>
             </div>
-
             <div class="divider"></div>
             <div class="footer-certifications">
                 <div class="cert-title">Certificações</div>
@@ -66,5 +67,6 @@
             </div>
         </div>
     </footer>
+    <script src="../js/login.js"></script>
 </body>
 </html>

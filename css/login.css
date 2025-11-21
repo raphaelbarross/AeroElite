@@ -121,3 +121,42 @@
             margin-top: -10px;
         }
         .right a:hover { color: white; }
+        
+        /* Container que envolve o input e o ícone */
+.password-container {
+    position: relative; /* Necessário para posicionar o ícone de forma absoluta */
+    /* Você pode precisar adicionar margem aqui se o div pai não tiver */
+}
+
+/* Estilo do input de senha dentro do container */
+.password-container input {
+    width: 100%;
+    padding-right: 35px; /* Adiciona espaço para o ícone */
+    box-sizing: border-box;
+}
+
+/* Estilo do ícone de alternar senha */
+#toggleSenha {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente o ícone */
+    right: 10px; /* Distância da borda direita */
+    transform: translateY(15%); /* Ajusta a centralização vertical */
+    cursor: pointer; /* Indica que é clicável */
+    color: #888;
+}
+#toggleSenha:hover {
+    color: #555; /* Cor ao passar o mouse */
+}
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .left, .right {
+                flex: none;
+                width: 100%;
+            }
+            .left {
+                text-align: center;
+            }
+        }
