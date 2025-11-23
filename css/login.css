@@ -1,162 +1,299 @@
-    :root {
-            --bg-color: #0f1a2e;
-            --card-bg: #1c2d46;
-            --text-color: #e0e0f0;
-            --label-color: #a0adc3;
-            --primary-color-start: #4a72a8;
-            --primary-color-end: #203756;
-            --accent-color: #54a0ff;
-            --input-bg: #152233;
-            --input-text: #c0c0d8;
-            --button-secondary-bg: #334661;
-            --border-color: #334661;
-            --shadow-color: rgba(0, 0, 0, 0.5);
-            --active-button-bg: #273952;
-            --primary-dark-blue: #0A1931;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 97vh;
-            
-            align-items: center;
-        }
-        
-        body::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to bottom, var(--primary-dark-blue) 0%, #000000 100%);
-            z-index: -1;
-        }
-        
-        .site-footer {
-            padding: 20px 0;
-            color: #A8C6E3;
-            font-size: 0.9em;
-            font-family: 'Inter', sans-serif;
-        }
-        .footer-content { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        .divider { height: 1px; background-color: rgba(168, 198, 227, 0.2); margin: 2px 0; }
-        .footer-primary { display: flex; justify-content: space-between; align-items: center; padding: 1px 0; }
-        .footer-copyright { color: #FFFFFF; font-weight: 500; }
-        .footer-links a { color: #A8C6E3; text-decoration: none; margin-left: 20px; transition: color 0.3s; }
-        .footer-links a:hover { color: #FFFFFF; }
-        .footer-certifications { text-align: center; padding: 1px 0 2px 0; line-height: 1.8; }
-
-        main {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            max-width: 1200px;
-            gap: 60px;
-        }
-
-        /* Coluna esquerda */
-        .left { flex: 1; color: white; }
-        .logo {
-            width: 100px; 
-            filter: brightness(0) invert(1);
-            
-        }
-
-        .left h1 { font-size: 55px; font-weight: 800; margin-bottom: 20px; }
-        .left p { font-size: 18px; max-width: 400px; line-height: 1.6; }
-        
-        .icone-rede-sociais span a  {
-            font-size: 26px;
-            color: white;
-            margin-right: 20px;
-            transition: 0.3s;
-            text-decoration: none;
-            
-        }
-        .icone-rede-sociais span a:hover { color: #54a0ff; }
-
-        /* Coluna direita */
-        .right {
-            flex: 1;
-            background: rgba(28,45,70);
-            padding: 40px 50px;
-            border-radius: 12px;
-            backdrop-filter: blur(5px);
-        }
-        .right h1 { margin-bottom: 30px; font-size: 35px; font-weight: 700; }
-
-        .right form { display: flex; flex-direction: column; gap: 20px; }
-        .right form div { display: flex; flex-direction: column; }
-
-        .right label { font-size: 15px; margin-bottom: 5px; }
-
-        .right input {
-            background: rgba(255,255,255,0.9);
-            padding: 12px;
-            border-radius: 6px;
-            border: none;
-            outline: none;
-            font-size: 15px;
-        }
-
-        .right button {
-            background: #ff6600;
-            color: white;
-            padding: 12px;
-            font-size: 16px;
-            border-radius: 6px;
-            border: none;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .right button:hover { background: #e65c00; }
-
-        .right a {
-            color: #ddd;
-            font-size: 14px;
-            text-decoration: none;
-            margin-top: -10px;
-        }
-        .right a:hover { color: white; }
-        
-        /* Container que envolve o input e o ícone */
-.password-container {
-    position: relative; /* Necessário para posicionar o ícone de forma absoluta */
-    /* Você pode precisar adicionar margem aqui se o div pai não tiver */
+:root{
+    --bg-color: #0f1a2e;
+    --card-bg: #1c2d46;
+    --text-color: #e0e0f0;
+    --label-color: #a0adc3;
+    --primary-color-start: #4a72a8;
+    --primary-color-end: #203756;
+    --accent-color: #54a0ff;
+    --input-bg: #152233;
+    --input-text: #c0c0d8;
+    --button-secondary-bg: #334661;
+    --border-color: #334661;
+    --shadow-color: rgba(0, 0, 0, 0.45);
+    --active-button-bg: #273952;
+    --primary-dark-blue: #0A1931;
+    --radius: 10px;
+    --container-max: 1200px;
+    --gap: 40px;
 }
 
-/* Estilo do input de senha dentro do container */
-.password-container input {
-    width: 100%;
-    padding-right: 35px; /* Adiciona espaço para o ícone */
-    box-sizing: border-box;
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    align-items: center;
+    position: relative; 
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
 }
 
-/* Estilo do ícone de alternar senha */
-#toggleSenha {
+
+body::before{
+    content: "";
     position: absolute;
-    top: 50%; /* Centraliza verticalmente o ícone */
-    right: 10px; /* Distância da borda direita */
-    transform: translateY(15%); /* Ajusta a centralização vertical */
-    cursor: pointer; /* Indica que é clicável */
-    color: #888;
+    inset: 0;
+    background: linear-gradient(to bottom, var(--primary-dark-blue) 0%, #000000 100%);
+    z-index: -1;
 }
-#toggleSenha:hover {
-    color: #555; /* Cor ao passar o mouse */
+
+
+.site-footer{
+    padding: 20px 0;
+    color: #A8C6E3;
+    font-size: 0.9em;
+    width: 100%;
+    background: transparent;
 }
-        @media (max-width: 768px) {
-            main {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            .left, .right {
-                flex: none;
-                width: 100%;
-            }
-            .left {
-                text-align: center;
-            }
-        }
+.footer-content{ max-width: var(--container-max); margin: 0 auto; padding: 0 20px; }
+.divider{ height: 1px; background-color: rgba(168,198,227,0.12); margin: 8px 0; }
+.footer-primary{ display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.footer-links a{ color: #A8C6E3; text-decoration:none; margin-left: 18px; }
+.footer-links a:hover{ color: #FFFFFF; }
+.footer-certifications{ text-align:center; padding: 8px 0 2px 0; line-height:1.6; }
+
+
+main{
+    width: 100%;
+    max-width: var(--container-max);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+    padding: 48px 20px;
+}
+
+
+.left{
+    flex: 1;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    min-width: 260px;
+}
+.left > div:first-child{ max-width: 520px; }
+.logo{
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    display: block;
+}
+.left h1{
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.02;
+    margin: 0;
+    color: var(--text-color);
+}
+.left p{
+    font-size: 17px;
+    max-width: 460px;
+    color: var(--label-color);
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+.icone-rede-sociais{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.icone-rede-sociais span a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    background: transparent;
+    transition: transform .18s ease, background .18s ease, color .18s ease;
+    border: 1px solid rgba(255,255,255,0.04);
+}
+.icone-rede-sociais span a:hover{
+    transform: translateY(-4px);
+    color: var(--accent-color);
+    background: rgba(84,160,255,0.06);
+}
+
+
+.right{
+    flex: 1;
+    background: linear-gradient(180deg, rgba(28,45,70,0.9), rgba(20,32,50,0.65));
+    padding: 40px 48px;
+    border-radius: var(--radius);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 30px var(--shadow-color);
+    min-width: 300px;
+    max-width: 540px;
+}
+.right h1{
+    margin: 0 0 18px 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+
+.right form{
+    display:flex;
+    flex-direction:column;
+    gap: 18px;
+}
+.right form div{ display:flex; flex-direction:column; gap:8px; }
+.right label{ font-size: 14px; color: var(--label-color); }
+
+.right input[type="email"],
+.right input[type="password"],
+.right input[type="text"],
+.right input, .right textarea{
+    background: var(--input-bg);
+    color: var(--input-text);
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.04);
+    font-size: 15px;
+    outline: none;
+    transition: box-shadow .15s ease, border-color .15s ease, transform .08s;
+}
+.right input::placeholder, .right textarea::placeholder{
+    color: rgba(192,192,216,0.5);
+}
+.right input:focus, .right textarea:focus{
+    box-shadow: 0 6px 20px rgba(52,86,130,0.12);
+    border-color: rgba(84,160,255,0.45);
+    transform: translateY(-1px);
+}
+
+
+.right button{
+    background: linear-gradient(90deg, var(--primary-color-start), var(--primary-color-end));
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+    box-shadow: 0 8px 22px rgba(32,55,86,0.28);
+}
+.right button:hover{
+    transform: translateY(-3px);
+    opacity: .98;
+}
+.right button:active{ transform: translateY(-1px) scale(.998); }
+
+
+.right a{
+    color: var(--label-color);
+    font-size: 14px;
+    text-decoration: none;
+}
+.right a:hover{ color: var(--text-color); text-decoration: underline; }
+.right p{ margin-top: 14px; color: var(--label-color); }
+
+
+.password-container{
+    position: relative;
+}
+.password-container input{
+    padding-right: 44px; 
+}
+#toggleSenha{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: rgba(255,255,255,0.55);
+    font-size: 18px;
+    transition: color .12s ease, transform .12s ease;
+    user-select: none;
+}
+#toggleSenha:hover{ color: var(--accent-color); transform: translateY(-50%) scale(1.03); }
+
+
+.icone-rede-sociais span a:focus,
+.right button:focus,
+.right input:focus,
+.right a:focus {
+    outline: 3px solid rgba(84,160,255,0.12);
+    outline-offset: 2px;
+}
+
+
+@media (max-width: 1024px){
+    main{ gap: 32px; padding: 40px 18px; }
+    .left h1{ font-size: 40px; }
+    .left p{ font-size: 16px; max-width: 420px; }
+    .right{ padding: 36px; max-width: 520px; }
+}
+
+
+@media (max-width: 768px){
+    main{
+        flex-direction: column;
+        align-items: stretch;
+        padding: 28px 16px;
+        gap: 22px;
+    }
+
+   
+    .left, .right{ width: 100%; flex: none; }
+    .left{ text-align: center; padding-top: 8px; order: 1; }
+    .right{ order: 2; margin: 0 auto; }
+
+    .left h1{ font-size: 32px; }
+    .left p{ font-size: 15px; margin: 0 auto; }
+
+    .right{ padding: 28px 20px; border-radius: 12px; }
+
+    .icone-rede-sociais{ justify-content: center; }
+
+    .right h1{ font-size: 28px; }
+    .right button{ width: 100%; }
+}
+
+
+@media (max-width: 480px){
+    main{ padding: 20px 12px; gap: 18px; }
+    .left h1{ font-size: 26px; }
+    .left p{ font-size: 14px; max-width: 100%; }
+    .logo{ width: 86px; }
+
+    .right{ padding: 20px 16px; border-radius: 10px; }
+    .right h1{ font-size: 22px; margin-bottom: 12px; }
+    .right input{ font-size: 14px; padding: 10px; }
+    .right label{ font-size: 13px; }
+    .right button{ padding: 12px; font-size: 15px; }
+    #toggleSenha{ right: 10px; font-size: 16px; }
+}
+
+
+@media (max-width: 360px){
+    .left h1{ font-size: 22px; }
+    .left p{ font-size: 13px; }
+    .icone-rede-sociais span a{ width: 40px; height: 40px; font-size: 18px; }
+    .right{ padding: 16px; }
+}
+
+
+@media (min-width: 1400px){
+    main{ gap: 80px; padding: 72px 20px; }
+    .left h1{ font-size: 60px; }
+    .right{ padding: 48px; }
+}

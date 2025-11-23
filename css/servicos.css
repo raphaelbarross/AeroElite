@@ -1,52 +1,46 @@
 
 :root {
-    /* Color Palette */
-    --primary-dark-blue: #0A1931; /* Cor de Fundo Principal */
-    --secondary-dark-blue: #02173d; /* Cor Secundária (Cards/Headers) */
-    --primary-accent-light: #A8C6E3; /* Destaque Principal (Azul Claro Suave) */
-    --secondary-accent-white: #FFFFFF; /* Destaque Secundário (Branco Puro) */
-    --text-light-primary: #FFFFFF; /* Texto Principal Claro */
-    --text-light-secondary: #A8C6E3; /* Texto Suave/Secundário */
-    --header-fixed-bg: #172B4D; /* Fundo do Cabeçalho Fixo */
+    --primary-dark-blue: #0A1931; 
+    --secondary-dark-blue: #02173d; 
+    --primary-accent-light: #A8C6E3; 
+    --secondary-accent-white: #FFFFFF;
+    --text-light-primary: #FFFFFF; 
+    --text-light-secondary: #A8C6E3; 
+    --header-fixed-bg: #172B4D; 
     
-    /* Typography & Spacing */
+   
     --font-heading: 'Inter', sans-serif;
     --font-body: 'Inter', sans-serif;
     --spacing-lg: 50px;
     --spacing-md: 30px;
     --spacing-sm: 15px;
     
-    /* Other Elements */
-    --card-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Sombra mais profunda */
-    --transition-smooth: all 0.4s ease-in-out; /* Transição levemente mais lenta */
+    --card-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); 
+    --transition-smooth: all 0.4s ease-in-out; 
 }
 
-/* ------------------------------------------------------------------- */
-/* --- Estilos Gerais --- */
-/* ------------------------------------------------------------------- */
 body {
     margin: 0;
     padding: 0;
     font-family: var(--font-body);
     color: var(--text-light-primary);
-    /* Novo background com gradiente */
     background: linear-gradient(to bottom, var(--primary-dark-blue) 0%, #000000 100%); 
-    line-height: 1.6; /* Melhora a legibilidade */
+    line-height: 1.6; 
 }
 
 h1 {
-    font-size: 4.5em; /* Ligeiramente maior para impacto */
+    font-size: 4.5em; 
     text-align: center;
     font-family: var(--font-heading);
     margin-bottom: var(--spacing-md); 
     color: var(--text-light-primary); 
-    font-weight: 800; /* Mais ousado */
+    font-weight: 800; 
     line-height: 1.1;
 }
 
 h2 {
-    font-size: 1.8em; /* Um pouco maior */
-    font-style: normal; /* Removendo o itálico padrão */
+    font-size: 1.8em; 
+    font-style: normal;
     color: var(--text-light-primary); 
     font-family: var(--font-heading);
     font-weight: 600;
@@ -57,18 +51,15 @@ h3 {
     font-weight: 600;
 }
 
-/* ------------------------------------------------------------------- */
-/* --- Estilos do Cabeçalho (Header) --- */
-/* ------------------------------------------------------------------- */
 header {
     width: 100%;
     position: fixed; 
     top: 0;
-    padding: 10px var(--spacing-lg); /* Padding vertical aumentado */
+    padding: 10px var(--spacing-lg); 
     box-sizing: border-box; 
     background-color: var(--header-fixed-bg); 
     z-index: 100;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6); /* Sombra mais proeminente */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6); 
 }
 
 .borda {
@@ -78,21 +69,21 @@ header {
 }
 
 .left {
-    width: auto; /* Deixa a largura dinâmica */
+    width: auto; 
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .logo {
-    width: 120px; /* Ligeiramente maior */
+    width: 120px; 
     filter: brightness(0) invert(1);
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    margin-left: var(--spacing-lg); /* Adicionado espaço à esquerda */
+    margin-left: var(--spacing-lg); 
 }
 
 .nav-links a {
@@ -105,9 +96,6 @@ header {
 
 
 
-/* ------------------------------------------------------------------- */
-/* --- Estilos da Seção de Vídeo (Início) --- */
-/* ------------------------------------------------------------------- */
 .inicio {
     text-align: center; 
     font-style: italic;
@@ -126,7 +114,7 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.4); /* Vídeo mais escuro para o texto se destacar mais */
+    filter: brightness(0.4);
     z-index: -100;
 }
 
@@ -136,7 +124,7 @@ header {
 }
 
 .bem-vindo h1 {
-    font-size: 5.5em; /* Título mais impactante */
+    font-size: 5.5em; 
     margin-bottom: 5px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
@@ -149,14 +137,13 @@ header {
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
 
-
 .sobre-nos {
     color: var(--text-light-primary); 
     text-decoration: none; 
-    background-color: rgba(168, 198, 227, 0.15); /* Fundo mais sutil */
-    border: 2px solid var(--primary-accent-light); /* Borda mais grossa */
-    padding: 12px 30px; /* Mais padding */
-    border-radius: 40px; /* Botão mais arredondado (pill shape) */
+    background-color: rgba(168, 198, 227, 0.15); 
+    border: 2px solid var(--primary-accent-light); 
+    padding: 12px 30px; 
+    border-radius: 40px; 
     transition: var(--transition-smooth);
     font-size: 1.4em;
     font-style: normal;
@@ -170,45 +157,38 @@ header {
     color: var(--primary-dark-blue);
     background-color: var(--primary-accent-light);
     text-decoration: none;
-    transform: translateY(-5px) scale(1.05); /* Efeito mais dinâmico */
+    transform: translateY(-5px) scale(1.05); 
     box-shadow: var(--card-shadow);
 }
 
 
-/* ------------------------------------------------------------------- */
-/* --- TÍTULO DA PÁGINA (.meu-titulo) --- */
-/* ------------------------------------------------------------------- */
 .meu-titulo {
     text-align: center;
     background: var(--secondary-dark-blue); 
-    padding: 180px 20px 80px 20px; /* Ajuste no padding superior */
+    padding: 180px 20px 80px 20px; 
     margin-bottom: var(--spacing-lg);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Sombra mais definida */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); 
 }
 .meu-titulo h1 {
-    font-size: 4em; /* Ligeiramente reduzido para subtítulo */
+    font-size: 4em; 
     font-weight: 800;
     color: var(--text-light-primary); 
     margin: 0 0 15px 0;
-    letter-spacing: 4px; /* Mais espaçamento */
-    border-bottom: 4px solid var(--primary-accent-light); /* Borda mais grossa */
+    letter-spacing: 4px; 
+    border-bottom: 4px solid var(--primary-accent-light); 
     display: inline-block;
     padding-bottom: 15px;
 }
 .meu-titulo h2 {
-    font-size: 1.6em; /* Aumentado */
+    font-size: 1.6em; 
     font-weight: 300;
     color: var(--text-light-secondary); 
-    max-width: 900px; /* Largura máxima maior */
+    max-width: 900px; 
     margin: var(--spacing-sm) auto 0 auto;
     font-style: normal; 
     line-height: 1.5;
 }
 
-
-/* ------------------------------------------------------------------- */
-/* --- SERVIÇOS PRINCIPAIS --- */
-/* ------------------------------------------------------------------- */
 .servicos-principais {
     max-width: 1200px;
     margin: 0 auto var(--spacing-lg) auto;
@@ -221,7 +201,7 @@ header {
 }
 
 .servicos-principais h2:first-of-type {
-    font-size: 3em; /* Título da seção mais proeminente */
+    font-size: 3em; 
     color: var(--text-light-primary); 
     margin-bottom: 10px;
     padding-top: var(--spacing-md); 
@@ -229,14 +209,14 @@ header {
 }
 
 .servicos-principais h3 {
-    font-size: 1.3em; /* Subtítulo da seção */
+    font-size: 1.3em; 
     color: var(--text-light-secondary); 
     margin-bottom: var(--spacing-lg);
     font-weight: 400;
     line-height: 1.4;
 }
 
-/* Garante que o título e subtítulo ocupem toda a largura no grid */
+
 .servicos-principais > h2:nth-of-type(1),
 .servicos-principais > h3:nth-of-type(1) {
     grid-column: 1 / -1;
@@ -246,25 +226,23 @@ header {
 
 .servico {
     background: var(--secondary-dark-blue); 
-    border: 2px solid rgba(168, 198, 227, 0.3); /* Borda mais definida */
-    border-radius: 12px; /* Mais arredondado */
+    border: 2px solid rgba(168, 198, 227, 0.3);
+    border-radius: 12px; 
     transition: var(--transition-smooth);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra inicial mais suave */
-    padding: 40px 20px; /* Mais espaço interno */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    padding: 40px 20px; 
     text-align: left;
 }
 
 
 
-/* ------------------------------------------------------------------- */
-/* --- Estilos do Rodapé (Footer) --- */
-/* ------------------------------------------------------------------- */
+
 .site-footer {
     background-color: var(--primary-dark-blue); 
     padding: var(--spacing-md) 0;
     color: var(--text-light-secondary); 
-    font-size: 0.95em; /* Ligeiramente maior */
-    border-top: 2px solid var(--primary-accent-light); /* Linha de destaque */
+    font-size: 0.95em; 
+    border-top: 2px solid var(--primary-accent-light); 
 }
 
 .footer-content {
@@ -275,7 +253,7 @@ header {
 
 .divider {
     height: 1px;
-    background-color: rgba(168, 198, 227, 0.3); /* Linha mais visível */
+    background-color: rgba(168, 198, 227, 0.3); 
     margin: var(--spacing-md) 0;
 }
 
@@ -320,78 +298,110 @@ header {
 }
 
 
-
-
-/* ------------------------------------------------------------------- */
-/* --- Media Queries (Responsividade) --- */
-/* ------------------------------------------------------------------- */
-@media (max-width: 1100px) {
-
-.servicos-principais {
-grid-template-columns: 1fr;
-gap: 20px;
+@media (max-width: 1024px) {
+  .meu-titulo {
+    padding: 140px 20px 60px;
+  }
+  .meu-titulo h1 { font-size: 3.6em; }
+  .meu-titulo h2 { font-size: 1.35em; max-width: 920px; }
+  .servicos-principais { gap: 28px; padding-bottom: 50px; }
+  .servico { padding: 32px 20px; min-height: 200px; }
+  .logo { width: 100px; }
+  .footer-content { padding: 0 18px; }
 }
 
 
-.servico {
-padding: 25px 18px;
+@media (max-width: 900px) {
+  .meu-titulo { padding: 120px 18px 50px; }
+  .meu-titulo h1 { font-size: 3.0em; }
+  .servicos-principais {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    padding: 0 18px 40px;
+  }
+  .servico { padding: 28px 16px; }
 }
 
 
-h1 {
-font-size: 3.2em;
+@media (max-width: 768px) {
+  
+  .meu-titulo { padding: 90px 16px 50px; margin-bottom: 30px; }
+  .meu-titulo h1 { font-size: 2.4em; letter-spacing: 2px; }
+  .meu-titulo h2 { font-size: 1.05em; max-width: 720px; padding: 0 8px; }
+
+  
+  .servicos-principais {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 0 12px 40px;
+    align-items: stretch;
+  }
+
+  .servico {
+    padding: 22px 16px;
+    min-height: unset;
+    border-radius: 10px;
+  }
+
+ 
+  .left h3 { display: none; }
+  .logo { width: 92px; }
+
+  .footer-primary { flex-direction: column; text-align: center; gap: 10px; }
 }
 
 
+@media (max-width: 600px) {
+  .meu-titulo { padding: 72px 14px 40px; }
+  .meu-titulo h1 { font-size: 2.0em; }
+  .meu-titulo h2 { font-size: 0.98em; padding: 0 6px; }
 
-.footer-primary {
-flex-direction: column;
-gap: 12px;
-text-align: center;
+  .servicos-principais { gap: 14px; padding: 0 10px 32px; }
+  .servico h2 { font-size: 1.15em; }
+  .servico h3 { font-size: 0.98em; }
+  .servico ul li { font-size: 0.95em; }
+
+  .footer-links a { margin-left: 12px; font-size: 0.95em; }
 }
-
-
-.footer-links a {
-margin: 0 12px;
-display: inline-block;
-}
-}
-
 
 
 @media (max-width: 480px) {
-.logo {
-width: 70px;
+  .meu-titulo { padding: 60px 12px 36px; }
+  .meu-titulo h1 { font-size: 1.8em; }
+  .meu-titulo h2 { font-size: 0.95em; }
+
+  .servicos-principais { padding: 0 8px 28px; gap: 12px; }
+  .servico { padding: 18px 12px; border-radius: 8px; }
+  .servico h2 { font-size: 1.05em; }
+  .servico h3 { font-size: 0.95em; color: rgba(168,198,227,0.9); }
+
+  .nav-links a { font-size: 0.92em; padding: 8px; }
+  .logo { width: 86px; }
 }
 
 
-.bem-vindo h1 {
-font-size: 2.6em;
+@media (max-width: 380px) {
+  .meu-titulo { padding: 50px 8px 28px; }
+  .meu-titulo h1 { font-size: 1.6em; letter-spacing: 1px; }
+  .meu-titulo h2 { font-size: 0.9em; }
+
+  .servico { padding: 14px 10px; }
+  .servico ul { margin-left: 14px; }
+  .servico ul li { font-size: 0.92em; }
+
+  .footer-content { padding: 0 10px; }
 }
 
-
-.sobre-nos {
-font-size: 1.2em;
-padding: 10px 22px;
+.nav-links {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-end !important;
+    gap: 20px !important;
+    overflow: visible !important;
+    white-space: nowrap !important;
+}
+.nav-links a {
+    font-size: 1em !important;
+    padding: 0 !important;
 }
 
-
-.meu-titulo h1 {
-font-size: 2.1em;
-}
-
-
-.meu-titulo h2 {
-font-size: 1.15em;
-}
-
-
-h1 {
-font-size: 2.7em;
-}
-
-
-.footer-links a {
-margin: 6px;
-}
-}

@@ -225,16 +225,202 @@ body {
 }
 
 
-@media (max-width: 768px) {
-    .footer-primary {
+/* ====== 1024px (notebook / tablet landscape) ====== */
+@media (max-width: 1024px) {
+
+    .conteudo-historia {
+        gap: 15px;
+    }
+
+    .img-historia img {
+        width: 320px;
+    }
+
+    .container-principal {
+        gap: 15px;
+        padding: 40px 20px;
+    }
+
+    .container-principal2 {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .bloco2 {
+        width: 45%;
+    }
+}
+
+
+/* ====== 900px (tablet grande) ====== */
+@media (max-width: 900px) {
+
+    .conteudo-historia {
         flex-direction: column;
         text-align: center;
     }
-    .footer-copyright {
-        margin-bottom: 15px;
+
+    .img-historia img {
+        width: 70%;
+        max-width: 350px;
+        margin: 0 auto;
     }
+
+    .container-principal {
+        flex-wrap: wrap;
+        padding: 40px 20px;
+    }
+
+    .bloco {
+        width: 45%;
+    }
+
+    .container-principal2 {
+        justify-content: center;
+    }
+}
+
+
+/* ====== 768px (tablet padrão) ====== */
+@media (max-width: 768px) {
+
+    .sobre {
+        padding-bottom: 12%;
+    }
+
+    .titulo-historia h1 {
+        font-size: 1.8em;
+    }
+
+    .conteudo-historia {
+        font-size: 1.15em;
+    }
+
+    .container-principal {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .bloco {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .equipe {
+        padding: 40px 15px;
+    }
+
+    .container-principal2 {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .bloco2 {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .Frota {
+        margin: 20px 0;
+        padding: 40px 20px;
+    }
+}
+
+
+/* ====== 600px (celulares grandes) ====== */
+@media (max-width: 600px) {
+
+    .sobre h1 {
+        font-size: 1.7em;
+    }
+
+    .sobre p {
+        font-size: 1.1em;
+    }
+
+    .titulo-historia h1 {
+        font-size: 1.6em;
+    }
+
+    .cabecalho-valores h1 {
+        font-size: 1.6em;
+    }
+
+    .bloco h2 {
+        font-size: 1.4em;
+    }
+
+    .bloco p {
+        font-size: 1em;
+    }
+
+    .container-principal {
+        padding: 20px 10px;
+    }
+
+    .equipe h1 {
+        font-size: 1.7em;
+    }
+}
+
+
+/* ====== 480px (celulares médios) ====== */
+@media (max-width: 480px) {
+
+    .sobre {
+        font-size: 1.1em;
+    }
+
+    .img-historia img {
+        width: 90%;
+    }
+
+    .container-principal {
+        gap: 15px;
+    }
+
+    .Frota p {
+        font-size: 1.3em;
+    }
+
+    .Frota a {
+        font-size: 1.1em;
+        padding: 12px 32px;
+    }
+
     .footer-links a {
-        margin: 0 8px;
-        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .footer-primary {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+
+/* ====== 380px (celulares pequenos) ====== */
+@media (max-width: 380px) {
+
+    .sobre h1 {
+        font-size: 1.4em;
+    }
+
+    .titulo-historia h1 {
+        font-size: 1.35em;
+    }
+
+    .cabecalho-valores h1 {
+        font-size: 1.35em;
+    }
+
+    .bloco2 img {
+        border-radius: 5%;
+    }
+
+    .Frota p {
+        font-size: 1.2em;
     }
 }
