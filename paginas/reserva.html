@@ -14,82 +14,106 @@
     <header>
      <div class="borda">
       <div class="left">
-        <img class="logo" src="../assents/logo.png" alt="AeroElite">
+        <a href="index.html"><img class="logo" src="../assents/logo.png" alt="AeroElite"></a>
         <h3>AeroElite</h3>
         </div>
         <nav class="nav-links"> 
-          <a href="index.html">Início</a>
           <a href="frota.html">Frota</a>
           <a href="servicos.html">Serviços</a>
           <a href="sobre.html">Sobre</a>
           <a href="contato.html">Contato</a>
           <a class="reserva" href="reserva.html">Reserve Já</a>
+          <a href="perfil.php"><img class="perfil" src="../assents/perfil.png" alt="perfil"></a>
         </nav>
       </div>
     </header>
     <div class="container">
         
         <main class="card">
-            <h1 class="card-title">Detalhes do Voo</h1>
+    <h1 class="card__titulo">Detalhes do Voo</h1>
 
-            <form>
-                <div class="form-section">
-                    <label class="section-label">Tipo de Viagem</label>
-                    <div class="radio-group">
-                        <input type="radio" id="one-way" name="trip-type" value="one-way" checked hidden>
-                        <label for="one-way" class="radio-button active">Só ida</label>
+    <form action="../php/reservar.php" method="POST">
 
-                        <input type="radio" id="round-trip" name="trip-type" value="round-trip" hidden>
-                        <label for="round-trip" class="radio-button">Ida e Volta</label>
-                    </div>
+
+        <div class="form-row location-row">
+            <div class="input-group">
+                <label class="section-label">Origem</label>
+                <div class="input-field">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input list="lista-cidades" name="partida" required placeholder="Cidade ou aeroporto de origem">
                 </div>
+            </div>
 
-                <div class="form-row location-row">
-                    <div class="input-group">
-                        <label class="section-label">Origem</label>
-                        <div class="input-field">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <input type="text" placeholder="Cidade ou aeroporto de origem">
-                        </div>
-                    </div>
-                    <div class="input-group">
-                        <label class="section-label">Destino</label>
-                        <div class="input-field">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <input type="text" placeholder="Cidade ou aeroporto de destino">
-                        </div>
-                    </div>
+            <div class="input-group">
+                <label class="section-label">Destino</label>
+                <div class="input-field">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input list="lista-cidades" name="destino" required placeholder="Cidade ou aeroporto de destino">
                 </div>
+            </div>
+        </div>
 
-                <div class="form-row">
-                    <div class="input-group date-input">
-                        <label class="section-label">Data de Partida</label>
-                        <div class="input-field">
-                            <i class="fas fa-calendar-alt"></i>
-                            <input type="text" placeholder="mm/dd/yyyy">
-                            <span class="input-icon-right"><i class="fas fa-calendar-day"></i></span>
-                        </div>
-                    </div>
-                    <div class="input-group time-input">
-                        <label class="section-label">Horário Preferido</label>
-                        <div class="input-field">
-                            <i class="far fa-clock"></i>
-                            <input type="text" placeholder="--:-- --">
-                            <span class="input-icon-right"><i class="fas fa-chevron-down"></i></span>
-                        </div>
-                    </div>
-                </div>
+        <!-- DATALIST (autocomplete) -->
+        <datalist id="lista-cidades">
+            <option value="São Paulo - Congonhas (CGH)">
+            <option value="São Paulo - Guarulhos (GRU)">
+            <option value="Campinas - Viracopos (VCP)">
+            <option value="Rio de Janeiro - Santos Dumont (SDU)">
+            <option value="Rio de Janeiro - Galeão (GIG)">
+            <option value="Belo Horizonte - Confins (CNF)">
+            <option value="Brasília (BSB)">
+            <option value="Salvador (SSA)">
+            <option value="Recife (REC)">
+            <option value="Fortaleza (FOR)">
+        </datalist>
 
-                <div class="form-actions">
-                    <button type="button" class="btn btn-secondary">Anterior</button>
-                    <button type="submit" class="btn btn-primary">Próximo</button>
+        <!-- DATA E HORA -->
+        <div class="form-row">
+            <div class="input-group date-input">
+                <label class="section-label">Data de Partida</label>
+                <div class="input-field">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="date" name="data" required>
                 </div>
-            </form>
-        </main>
+            </div>
+
+            <div class="input-group time-input">
+                <label class="section-label">Horário Preferido</label>
+                <div class="input-field">
+                    <i class="far fa-clock"></i>
+                    <input type="time" name="hora" required>
+                </div>
+            </div>
+        </div>
+
+        <!-- ESCOLHER A NAVE -->
+        <div class="form-section">
+            <label class="section-label">Escolher Aeronave</label>
+            <div class="input-field">
+                <i class="fas fa-plane"></i>
+                <select name="nave" required>
+                    <option value="" disabled selected>Selecione a aeronave</option>
+                    <option value="Cessna Citation Mustang">Cessna Citation Mustang</option>
+                    <option value="Embraer Phenom 100">Embraer Phenom 100</option>
+                    <option value="Pilatus PC-12">Pilatus PC-12</option>
+                    <option value="Bombardier Global Express">Bombardier Global Express</option>
+                    <option value="Ru'swum-pattern Phantom">Ru'swum-pattern Phantom</option>
+                    <option value="Pilatus PC-24">Pilatus PC-24</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- BOTÕES -->
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Reservar Voo</button>
+        </div>
+
+    </form>
+</main>
     </div>
     <footer class="site-footer">
         <div class="footer-content">
-            <!-- Linha Divisória Superior -->
+
             <div class="divider"></div>
 
             <div class="footer-primary">
@@ -103,7 +127,6 @@
                 </div>
             </div>
 
-            <!-- Linha Divisória Inferior -->
             <div class="divider"></div>
 
             <div class="footer-certifications">

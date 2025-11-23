@@ -10,8 +10,8 @@
     --header-fixed-bg: #172B4D; /* Fundo do Cabeçalho Fixo */
     
     /* Typography & Spacing */
-    --font-heading: 'Poppins', sans-serif;
-    --font-body: 'Open Sans', sans-serif;
+    --font-heading: 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif;
     --spacing-lg: 50px;
     --spacing-md: 30px;
     --spacing-sm: 15px;
@@ -96,21 +96,14 @@ header {
 }
 
 .nav-links a {
-    color: var(--text-light-primary); 
+    color: rgb(247, 247, 247);
     text-decoration: none;
-    margin-left: var(--spacing-md); 
-    font-weight: 400;
-    font-family: var(--font-body);
-    transition: var(--transition-smooth);
-    letter-spacing: 0.5px;
-    padding: 5px 0;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.nav-links a:hover {
-    color: var(--primary-accent-light);
-    transform: translateY(-2px);
-    border-bottom: 2px solid var(--primary-accent-light); /* Destaque sutil */
-}
+
 
 /* ------------------------------------------------------------------- */
 /* --- Estilos da Seção de Vídeo (Início) --- */
