@@ -14,6 +14,7 @@ if (isset($_POST['cadastro'])) {
         echo "Email já cadastrado";
         header("location: /AEROELITE/paginas/login.html");
     }
+    header("location: /AEROELITE/paginas/index.html");
     exit();
 }
 
