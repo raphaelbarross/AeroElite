@@ -287,6 +287,7 @@ header {
     font-size: 1em;
     letter-spacing: 1px;
 }
+<<<<<<< HEAD
 
 
 @media (max-width: 1024px) {
@@ -396,3 +397,44 @@ header {
     padding: 0 !important;
 }
 
+=======
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background: #172B4D;
+        width: 100%;
+        flex-direction: column;
+        display: none !important;
+        padding: 20px;
+    }
+    .nav-links a {
+        margin: 10px 0;
+    }
+    .nav-links.active {
+        display: flex !important;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .perfil {
+    width: 4rem;
+    padding-left: 1.5rem;
+    margin-right: 30px;
+    }
+}
+>>>>>>> aa22309a833ababcf6bd24b3037b43931e15c7fa
