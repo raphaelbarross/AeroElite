@@ -142,16 +142,3 @@
 #toggleSenha:hover {
     color: #555;
 }
-        @media (max-width: 768px) {
-            main {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            .left, .right {
-                flex: none;
-                width: 100%;
-            }
-            .left {
-                text-align: center;
-            }
-        }

@@ -287,3 +287,112 @@ header {
     font-size: 1em;
     letter-spacing: 1px;
 }
+
+
+@media (max-width: 1024px) {
+  .meu-titulo {
+    padding: 140px 20px 60px;
+  }
+  .meu-titulo h1 { font-size: 3.6em; }
+  .meu-titulo h2 { font-size: 1.35em; max-width: 920px; }
+  .servicos-principais { gap: 28px; padding-bottom: 50px; }
+  .servico { padding: 32px 20px; min-height: 200px; }
+  .logo { width: 100px; }
+  .footer-content { padding: 0 18px; }
+}
+
+
+@media (max-width: 900px) {
+  .meu-titulo { padding: 120px 18px 50px; }
+  .meu-titulo h1 { font-size: 3.0em; }
+  .servicos-principais {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    padding: 0 18px 40px;
+  }
+  .servico { padding: 28px 16px; }
+}
+
+
+@media (max-width: 768px) {
+  
+  .meu-titulo { padding: 90px 16px 50px; margin-bottom: 30px; }
+  .meu-titulo h1 { font-size: 2.4em; letter-spacing: 2px; }
+  .meu-titulo h2 { font-size: 1.05em; max-width: 720px; padding: 0 8px; }
+
+  
+  .servicos-principais {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 0 12px 40px;
+    align-items: stretch;
+  }
+
+  .servico {
+    padding: 22px 16px;
+    min-height: unset;
+    border-radius: 10px;
+  }
+
+ 
+  .left h3 { display: none; }
+  .logo { width: 92px; }
+
+  .footer-primary { flex-direction: column; text-align: center; gap: 10px; }
+}
+
+
+@media (max-width: 600px) {
+  .meu-titulo { padding: 72px 14px 40px; }
+  .meu-titulo h1 { font-size: 2.0em; }
+  .meu-titulo h2 { font-size: 0.98em; padding: 0 6px; }
+
+  .servicos-principais { gap: 14px; padding: 0 10px 32px; }
+  .servico h2 { font-size: 1.15em; }
+  .servico h3 { font-size: 0.98em; }
+  .servico ul li { font-size: 0.95em; }
+
+  .footer-links a { margin-left: 12px; font-size: 0.95em; }
+}
+
+
+@media (max-width: 480px) {
+  .meu-titulo { padding: 60px 12px 36px; }
+  .meu-titulo h1 { font-size: 1.8em; }
+  .meu-titulo h2 { font-size: 0.95em; }
+
+  .servicos-principais { padding: 0 8px 28px; gap: 12px; }
+  .servico { padding: 18px 12px; border-radius: 8px; }
+  .servico h2 { font-size: 1.05em; }
+  .servico h3 { font-size: 0.95em; color: rgba(168,198,227,0.9); }
+
+  .nav-links a { font-size: 0.92em; padding: 8px; }
+  .logo { width: 86px; }
+}
+
+
+@media (max-width: 380px) {
+  .meu-titulo { padding: 50px 8px 28px; }
+  .meu-titulo h1 { font-size: 1.6em; letter-spacing: 1px; }
+  .meu-titulo h2 { font-size: 0.9em; }
+
+  .servico { padding: 14px 10px; }
+  .servico ul { margin-left: 14px; }
+  .servico ul li { font-size: 0.92em; }
+
+  .footer-content { padding: 0 10px; }
+}
+
+.nav-links {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-end !important;
+    gap: 20px !important;
+    overflow: visible !important;
+    white-space: nowrap !important;
+}
+.nav-links a {
+    font-size: 1em !important;
+    padding: 0 !important;
+}
+
