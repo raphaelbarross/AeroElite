@@ -105,7 +105,6 @@ main {
     cursor: pointer;
 }
 
-/* Modal */
 .modal {
     display: none;
     position: fixed;
@@ -151,7 +150,6 @@ input, select {
     background-color: #27ae60;
 }
 
-/* VIAGENS */
 .viagens {
     background-color: #0d1a30;
     color: white;
@@ -206,7 +204,6 @@ input, select {
     font-weight: bold;
 }
 
-/* RESPONSIVIDADE */
 @media (max-width: 900px) {
     .conteudo {
         flex-direction: column;

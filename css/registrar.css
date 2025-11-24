@@ -59,7 +59,6 @@
             
         }
 
-        /* Coluna esquerda */
         .left { flex: 1; color: white; }
         .logo {
             width: 100px; 
@@ -81,7 +80,6 @@
         }
         .icone-rede-sociais span a:hover { color: #54a0ff; }
 
-        /* Coluna direita */
         .right {
             flex: 1;
             background: rgba(28,45,70);
