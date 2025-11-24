@@ -227,6 +227,10 @@ select {
     .contato-content {
         gap: 20px;
     }
+.footer-certifications {
+    text-align: center;
+    padding: 1px 0 2px 0;
+    line-height: 1.8;
 }
 
 
@@ -234,7 +238,19 @@ select {
     color: #A8C6E3;
     font-size: 0.85em;
 }
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
 
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+}
 @media (max-width: 768px) {
 
     
@@ -280,23 +296,33 @@ select {
 
     .contato-header h1 {
         font-size: 1.7em;
+    .nav-links {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background: #172B4D;
+        width: 100%;
+        flex-direction: column;
+        display: none !important;
+        padding: 20px;
     }
-
-    .contato-header p {
-        font-size: 0.9em;
+    .nav-links a {
+        margin: 10px 0;
     }
-
-    .select-icon {
-        bottom: 13px;
-        right: 10px;
+    .nav-links.active {
+        display: flex !important;
     }
-
-    .card {
-        padding: 16px;
+    .hamburger {
+        display: flex;
     }
-
-    .info-card {
-        padding: 14px;
+    .perfil {
+    width: 4rem;
+    padding-left: 1.5rem;
+    margin-right: 30px;
     }
 }
 
+.perfil {
+    width: 4rem;
+    padding-left: 1.5rem;
+}
