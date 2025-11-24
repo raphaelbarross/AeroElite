@@ -18,9 +18,9 @@
         <h3>AeroElite</h3>
         </div>
         <nav class="nav-links"> 
+          <a href="sobre.html">Sobre</a>
           <a href="frota.html">Frota</a>
           <a href="servicos.html">Serviços</a>
-          <a href="sobre.html">Sobre</a>
           <a href="contato.html">Contato</a>
           <a class="reserva" href="reserva.html">Reserve Já</a>
           <a href="perfil.php"><img class="perfil" src="../assents/perfil.png" alt="perfil"></a>
@@ -31,6 +31,7 @@
         
         <main class="card">
     <h1 class="card__titulo">Detalhes do Voo</h1>
+    <h1 class="card__titulo">Informações:</h1>
 
     <form action="../php/reservar.php" method="POST">
 
@@ -48,26 +49,74 @@
                 <label class="section-label">Destino</label>
                 <div class="input-field">
                     <i class="fas fa-map-marker-alt"></i>
-                    <input list="lista-cidades" name="destino" required placeholder="Cidade ou aeroporto de destino">
+                    <input list="lista-destinos" name="destino" required placeholder="Cidade ou aeroporto de destino">
                 </div>
             </div>
         </div>
 
-        <!-- DATALIST (autocomplete) -->
         <datalist id="lista-cidades">
-            <option value="São Paulo - Congonhas (CGH)">
-            <option value="São Paulo - Guarulhos (GRU)">
-            <option value="Campinas - Viracopos (VCP)">
-            <option value="Rio de Janeiro - Santos Dumont (SDU)">
-            <option value="Rio de Janeiro - Galeão (GIG)">
-            <option value="Belo Horizonte - Confins (CNF)">
-            <option value="Brasília (BSB)">
-            <option value="Salvador (SSA)">
-            <option value="Recife (REC)">
-            <option value="Fortaleza (FOR)">
+                <option value="Aracaju (AJU)">
+                <option value="Belém (BEL)">
+                <option value="Belo Horizonte (BHZ)">
+                <option value="Boa Vista (BVB)">
+                <option value="Brasília (BSB)">
+                <option value="Campo Grande (CGR)">
+                <option value="Cuiabá (CGB)">
+                <option value="Curitiba (CWB)">
+                <option value="Florianópolis (FLN)">
+                <option value="Fortaleza (FOR)">
+                <option value="Goiânia (GYN)">
+                <option value="João Pessoa (JPA)">
+                <option value="Macapá (MCP)">
+                <option value="Maceió (MCZ)">
+                <option value="Manaus (MAO)">
+                <option value="Natal (NAT)">
+                <option value="Palmas (PMW)">
+                <option value="Porto Alegre (POA)">
+                <option value="Porto Velho (PVH)">
+                <option value="Recife (REC)">
+                <option value="Rio Branco (RBR)">
+                <option value="Rio de Janeiro (RIO)">
+                <option value="Salvador (SSA)">
+                <option value="São Luís (SLZ)">
+                <option value="São Paulo (SAO)">
+                <option value="Teresina (THE)">
+                <option value="Vitória (VIX)">
         </datalist>
 
-        <!-- DATA E HORA -->
+        <datalist id="lista-destinos">
+            <option value="Paris (CDG)">
+            <option value="Londres (LHR)">
+            <option value="Roma (FCO)">
+            <option value="Berlim (BER)">
+            <option value="Amsterdã (AMS)">
+            <option value="Barcelona (BCN)">
+            <option value="Madri (MAD)">
+            <option value="Lisboa (LIS)">
+            <option value="Porto (OPO)">
+            <option value="Veneza (VCE)">
+            <option value="Atenas (ATH)">
+            <option value="Dubai (DXB)">
+            <option value="Istambul (IST)">
+            <option value="Tóquio (HND)">
+            <option value="Osaka (KIX)">
+            <option value="Seul (ICN)">
+            <option value="Bangkok (BKK)">
+            <option value="Singapura (SIN)">
+            <option value="Sydney (SYD)">
+            <option value="Melbourne (MEL)">
+            <option value="Toronto (YYZ)">
+            <option value="Vancouver (YVR)">
+            <option value="Nova York (JFK)">
+            <option value="Los Angeles (LAX)">
+            <option value="Miami (MIA)">
+            <option value="Cancún (CUN)">
+            <option value="Buenos Aires (EZE)">
+            <option value="Cidade do Cabo (CPT)">
+            <option value="Cairo (CAI)">
+            <option value="Moscou (SVO)">
+        </datalist>
+        
         <div class="form-row">
             <div class="input-group date-input">
                 <label class="section-label">Data de Partida</label>
@@ -86,7 +135,6 @@
             </div>
         </div>
 
-        <!-- ESCOLHER A NAVE -->
         <div class="form-section">
             <label class="section-label">Escolher Aeronave</label>
             <div class="input-field">
@@ -103,9 +151,8 @@
             </div>
         </div>
 
-        <!-- BOTÕES -->
         <div class="form-actions">
-            <button type="submit" class="btn btn-primary">Reservar Voo</button>
+            <button type="submit" class="btn btn-primary" name="reservar">Reservar Voo</button>
         </div>
 
     </form>
@@ -113,12 +160,11 @@
     </div>
     <footer class="site-footer">
         <div class="footer-content">
-
             <div class="divider"></div>
 
             <div class="footer-primary">
                 <div class="footer-copyright">
-                    © 2024 Elite Aviation. Todos os direitos reservados.
+                    © 2025 Elite Aviation. Todos os direitos reservados.
                 </div>
                 <div class="footer-links">
                     <a href="#">Política de Privacidade</a>
@@ -132,10 +178,11 @@
             <div class="footer-certifications">
                 <div class="cert-title">Certificações</div>
                 <div class="cert-list">
-                    AAA • BBB • CCC DDD • EEE
+                    ANAC • IATA • ISO 9001 • IOSA
                 </div>
             </div>
         </div>
     </footer>
+<script src="cidades.js"></script>
 </body>
 </html>
