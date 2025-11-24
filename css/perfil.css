@@ -6,33 +6,20 @@ body {
     color: #FFFFFF;
 }
 
-h1 {
-    font-size: 4em;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    margin-bottom: 20px; 
-}
-
-h2 {
-    font-size: 1.5em;
-    font-style: italic;
-    color: #4a88cb;
-}
-
 header {
     width: 100%;
-    position: fixed; 
+    position: fixed;
     top: 0;
-    padding: 5px 50px; 
-    box-sizing: border-box; 
+    padding: 5px 50px;
+    box-sizing: border-box;
     background-color: #172B4D;
     z-index: 100;
 }
 
 .borda {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
 }
 
 .left {
@@ -43,7 +30,7 @@ header {
 }
 
 .logo {
-    width: 100px; 
+    width: 100px;
     filter: brightness(0) invert(1);
 }
 
@@ -53,9 +40,9 @@ header {
 }
 
 .nav-links a {
-    color: #FFFFFF; 
+    color: #FFFFFF;
     text-decoration: none;
-    margin-left: 15px; 
+    margin-left: 15px;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -69,26 +56,43 @@ header {
     padding-left: 1.5rem;
 }
 
+main {
+    margin-top: 120px;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+}
 
 .usuario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 1rem;
-    background-color: #11223d;
-    width: 25rem;
-    border: 2px;
-    border-color: aliceblue;
+    background-color: #0f1e37;
+    padding: 20px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #23385f;
 }
-
 
 .usuario__foto {
-    width: 20rem;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
 }
 
-.usuario__status, .usuario__milhas {
-    color: #000000;
-    margin:0;
+.usuario__nome {
+    font-size: 1.3rem;
+}
+
+.usuario__status,
+.usuario__milhas {
+    margin: 5px 0;
 }
 
 .usuario__botao {
@@ -146,6 +150,71 @@ input, select {
     background-color: #27ae60;
 }
 
-.btn-salvar:hover {
-    background-color: #1e8449;
+.viagens {
+    background-color: #0d1a30;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 60%;
+    min-height: 300px;
+    border: 1px solid #1d2f52;
+}
+
+.viagens h2 {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #1d2f52;
+    padding-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+.cartao-voo {
+    background-color: #102544;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #1f3a66;
+}
+
+.cartao-voo p {
+    margin: 5px 0;
+}
+
+.botao-checkin {
+    background-color: #0fa33a;
+    border: none;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.botao-checkin:hover {
+    background-color: #0c8a31;
+}
+
+.finalizado {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #cfe8cf;
+    color: #155724;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .viagens {
+        width: 90%;
+    }
+
+    .usuario {
+        width: 300px;
+    }
 }
