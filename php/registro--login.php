@@ -14,6 +14,7 @@ if (isset($_POST['cadastro'])) {
         echo "Email já cadastrado";
         header("location: /AEROELITE/paginas/login.html");
     }
+    $inserir = $conexao->query("INSERT INTO usuario (email, senha)VALUES ('$email', '$senha')");
     header("location: /AEROELITE/paginas/index.html");
     exit();
 }
