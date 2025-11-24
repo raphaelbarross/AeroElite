@@ -441,11 +441,6 @@ body {
     font-size: 0.85em;
 
 }
-
-
-@media (max-width: 1024px) {
-
-
 .hamburger {
     display: none;
     flex-direction: column;
@@ -458,6 +453,8 @@ body {
     height: 3px;
     background: #fff;
     border-radius: 5px;
+
+
 }
 @media (max-width: 768px) {
 
@@ -532,6 +529,30 @@ body {
     .Frota {
         margin: 20px 0;
         padding: 40px 20px;
+    }
+    .nav-links {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background: #172B4D;
+        width: 100%;
+        flex-direction: column;
+        display: none !important;
+        padding: 20px;
+    }
+    .nav-links a {
+        margin: 10px 0;
+    }
+    .nav-links.active {
+        display: flex !important;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .perfil {
+        width: 4rem;
+        padding-left: 1.5rem;
+        margin-right: 30px;
     }
 }
 
@@ -628,30 +649,7 @@ body {
     .Frota p {
         font-size: 1.2em;
     }
-    .nav-links {
-        position: absolute;
-        top: 100px;
-        right: 0;
-        background: #172B4D;
-        width: 100%;
-        flex-direction: column;
-        display: none !important;
-        padding: 20px;
-    }
-    .nav-links a {
-        margin: 10px 0;
-    }
-    .nav-links.active {
-        display: flex !important;
-    }
-    .hamburger {
-        display: flex;
-    }
-    .perfil {
-        width: 4rem;
-        padding-left: 1.5rem;
-        margin-right: 30px;
-    }
+    
 }
 
 

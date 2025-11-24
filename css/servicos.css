@@ -287,11 +287,21 @@ header {
     font-size: 1em;
     letter-spacing: 1px;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f41746997ea2fa6ac17d22b840fc59100415be88
 
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+}
 
 @media (max-width: 1024px) {
   .meu-titulo {
@@ -338,11 +348,33 @@ header {
     border-radius: 10px;
   }
 
- 
-  .left h3 { display: none; }
   .logo { width: 92px; }
 
   .footer-primary { flex-direction: column; text-align: center; gap: 10px; }
+   .nav-links {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background: #172B4D;
+        width: 100%;
+        flex-direction: column;
+        display: none !important;
+        padding: 20px;
+    }
+    .nav-links a {
+        margin: 10px 0;
+    }
+    .nav-links.active {
+        display: flex !important;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .perfil {
+    width: 4rem;
+    padding-left: 1.5rem;
+    margin-right: 30px;
+    }
 }
 
 
@@ -387,60 +419,7 @@ header {
   .footer-content { padding: 0 10px; }
 }
 
-.nav-links {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    justify-content: flex-end !important;
-    gap: 20px !important;
-    overflow: visible !important;
-    white-space: nowrap !important;
-}
-.nav-links a {
-    font-size: 1em !important;
-    padding: 0 !important;
-}
 
-<<<<<<< HEAD
-=======
-=======
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
 
-.hamburger span {
-    width: 30px;
-    height: 3px;
-    background: #fff;
-    border-radius: 5px;
-}
-@media (max-width: 768px) {
-    .nav-links {
-        position: absolute;
-        top: 100px;
-        right: 0;
-        background: #172B4D;
-        width: 100%;
-        flex-direction: column;
-        display: none !important;
-        padding: 20px;
-    }
-    .nav-links a {
-        margin: 10px 0;
-    }
-    .nav-links.active {
-        display: flex !important;
-    }
-    .hamburger {
-        display: flex;
-    }
-    .perfil {
-    width: 4rem;
-    padding-left: 1.5rem;
-    margin-right: 30px;
-    }
-}
->>>>>>> aa22309a833ababcf6bd24b3037b43931e15c7fa
->>>>>>> f41746997ea2fa6ac17d22b840fc59100415be88
+
+

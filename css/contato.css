@@ -212,7 +212,19 @@ select {
 .footer-links a:hover {
     color: #FFFFFF;
 }
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
 
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+}
 
 @media (max-width: 1024px) {
 
@@ -238,18 +250,6 @@ select {
     color: #A8C6E3;
     font-size: 0.85em;
 }
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.hamburger span {
-    width: 30px;
-    height: 3px;
-    background: #fff;
-    border-radius: 5px;
 }
 @media (max-width: 768px) {
 
@@ -296,6 +296,7 @@ select {
 
     .contato-header h1 {
         font-size: 1.7em;
+    }
     .nav-links {
         position: absolute;
         top: 100px;
@@ -320,6 +321,7 @@ select {
     padding-left: 1.5rem;
     margin-right: 30px;
     }
+}
 }
 
 .perfil {
